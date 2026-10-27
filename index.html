@@ -7,25 +7,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Buy, sell and import quality cars with MikeOke. Buy, sell and import from a trusted company"
+      content="Buy, sell and import quality cars with MikeOke. Buy, sell and import from a trusted company that provides best car solution to meet your needs and budget."
     />
-    <meta name="theme-color" content="#000052" />
+    <meta name="theme-color" content="#172b4d" />
 
     <!-- open graph -->
 
-    <meta property="og:title" content="MikeOke-Buy and sell cars" />
+    <meta property="og:title" content="MikeOke-Buy & sell cars" />
     <meta
       property="og:description"
       content="Discover quality cars from MikeOke motors"
     />
-    <meta property="og:image" content="" />
+    <meta property="og:image" content="images/logo-icon.webp" />
     <meta property="og:type" content="website" />
 
     <!-- Page Title -->
 
-    <title>MikeOke | Home</title>
+    <title>Home | MikeOke Motors</title>
+
+    <!-- Google Fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+      integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        lucide.createIcons();
+      });
+    </script>
 
     <!-- Favicon -->
+
     <link
       rel="apple-touch-icon"
       sizes="180x180"
@@ -44,20 +73,117 @@
       href="/images/favicon/favicon-16x16.png"
     />
     <link
-      rel="android-chrome"
+      rel="icon"
       type="image/png"
       sizes="192x192"
       href="/images/favicon/android-chrome-192x192.png"
     />
     <link rel="manifest" href="/site.webmanifest" />
+
+    <!-- Stylesheet/Css -->
+
+    <link rel="stylesheet" href="styles/general.css" />
+    <link rel="stylesheet" href="styles/style.css" />
   </head>
+
   <body>
+    <!-- Back to top button/link -->
+
+    <a class="back-to-top" href="#" hidden
+      >Back to top <i class="fa-solid fa-arrow-up"></i
+    ></a>
+
     <!-- Header -->
 
     <header>
+      <!-- Company logo -->
+
+      <a class="header-logo" href="index.html"
+        ><img src="images/logo.webp" alt="MikeOke"
+      /></a>
+
       <!-- Navigation Links -->
 
-      <nav></nav>
+      <nav
+        class="primary-nav"
+        aria-label="primary navigation"
+        aria-hidden="true"
+        hidden
+      >
+        <button
+          aria-controls="primary-navigation"
+          aria-expanded="true"
+          class="close"
+        >
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+
+        <ul class="nav-list">
+          <li>
+            <a href="index.html" class="current-page">Home</a>
+          </li>
+
+          <li>
+            <a href="cars.html">Cars</a>
+          </li>
+
+          <li class="services">
+            <button>
+              Services
+              <i class="fa-solid fa-angle-down"></i>
+            </button>
+
+            <div class="services-dropdown" hidden>
+              <h3>What You Can Do With MikeOke</h3>
+
+              <ul>
+                <li>
+                  <a href="cars.html">Buy Car</a>
+                </li>
+
+                <li>
+                  <a href="import-car.html">Import Car</a>
+                </li>
+
+                <li>
+                  <a href="source-car.html">Car Sourcing</a>
+                </li>
+
+                <li>
+                  <a href="sell-car.html">Sell Car</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+
+          <li>
+            <a href="about.html">About Us</a>
+          </li>
+
+          <li>
+            <a href="contact.html">Contact</a>
+          </li>
+
+          <li>
+            <a href="faq.html">FAQ</a>
+          </li>
+        </ul>
+
+        <a
+          class="whatsapp"
+          href="https://wa.me/message/ZYFABMOAALL4M1"
+          target="_blank"
+          ><i class="fa-brands fa-whatsapp"></i> Chat with us</a
+        >
+      </nav>
+
+      <button
+        class="hamburger-menu"
+        aria-expanded="false"
+        aria-controls="primary-navigation"
+      >
+        <i class="fa-solid fa-bars"></i>
+      </button>
     </header>
 
     <!-- Main contents -->
@@ -65,31 +191,449 @@
     <main>
       <!-- Hero section -->
 
-      <section class="hero-section"></section>
+      <section id="index" class="hero-section">
+        <div class="hero-text">
+          <h1 class="hero-header">
+            Find Your Perfect Car. <br />
+            Drive Your <span>Dreams</span>
+          </h1>
+
+          <p>
+            At MikeOke Motors, we help you find the perfect car that matches
+            your needs, style, and budget. Making your car-buying journey
+            simple, seamless and satisfaying.
+          </p>
+        </div>
+
+        <div class="hero-links">
+          <a href="cars.html">Browse Cars</a>
+
+          <a href="sell-car.html">Sell Your Car</a>
+        </div>
+
+        <div class="go-down">
+          <a href="#featured"><i class="fa-solid fa-arrow-down"></i></a>
+        </div>
+      </section>
 
       <!-- Cars Available Section -->
 
-      <section class="cars-available"></section>
+      <section id="featured" class="featured-section">
+        <h2>Featured Cars</h2>
+
+        <div class="car-cards">
+          <div class="car-div">
+            <img
+              src="images/cars/honda-pilot/IMG-20261012-WA0020.webp"
+              alt="Honda Pilot"
+              loading="lazy"
+            />
+
+            <div class="car-details">
+              <h3>Honda Pilot</h3>
+
+              <p><span>Price:</span> NGN 8,500,000</p>
+
+              <p><span>Condition :</span> Nigerian Used</p>
+
+              <p><span>Year :</span> 2012</p>
+            </div>
+
+            <div class="more-link">
+              <a class="primary-link" href="car-details.html">See more</a>
+            </div>
+          </div>
+
+          <div class="car-div">
+            <img
+              src="images/cars/nissan-pathfinder/IMG-20261014-WA0010.webp"
+              alt="Nissan Pathfinder"
+              loading="lazy"
+            />
+
+            <div class="car-details">
+              <h3>Nissan Pathfinder</h3>
+
+              <p><span>Price:</span> NGN 11,500,000</p>
+
+              <p><span>Condition :</span> Foreign Used</p>
+
+              <p><span>Year :</span> 2011</p>
+            </div>
+
+            <div class="more-link">
+              <a class="primary-link" href="car-details.html">See more</a>
+            </div>
+          </div>
+
+          <div class="car-div">
+            <img
+              src="images/cars/toyota-highlander/IMG-20261014-WA0008.jpg"
+              alt="Toyota Highlander"
+              loading="lazy"
+            />
+
+            <div class="car-details">
+              <h3>Toyota Highlander</h3>
+
+              <p><span>Price:</span> NGN 20,500,000</p>
+
+              <p><span>Condition :</span> Foreign Used</p>
+
+              <p><span>Year :</span> 2012</p>
+            </div>
+
+            <div class="more-link">
+              <a class="primary-link" href="car-details.html">See more</a>
+            </div>
+          </div>
+
+          <div class="car-div">
+            <img
+              src="images/cars/toyota-sienna/IMG-20261014-WA0020.jpg"
+              alt="Toyota Sienna"
+              loading="lazy"
+            />
+
+            <div class="car-details">
+              <h3>Toyota Sienna</h3>
+
+              <p><span>Price:</span> NGN 10,500,000</p>
+
+              <p><span>Condition :</span> Foreign Used</p>
+
+              <p><span>Year :</span> 2005</p>
+            </div>
+
+            <div class="more-link">
+              <a class="primary-link" href="car-details.html">See more</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="view-link">
+          <a class="second-link" href="cars.html">View all</a>
+        </div>
+      </section>
 
       <!-- What you want section -->
 
-      <section class="WYW-section"></section>
+      <section class="wyw-section">
+        <p class="eyebrow">Categories of your choice</p>
+        <h2>What Do You Want?</h2>
+
+        <div class="wyw-cards">
+          <div class="wyw-div">
+            <h3>Nigerian Used Cars</h3>
+
+            <p>Explore quality pre-owned cars available within Nigeria.</p>
+
+            <div class="explore-link">
+              <a class="second-link" href="cars.html#nigeria-used">Explore</a>
+            </div>
+          </div>
+
+          <div class="wyw-div">
+            <h3>Foreign Used Cars</h3>
+
+            <p>Discover quality vehicles imported from abroad.</p>
+
+            <div class="explore-link">
+              <a class="second-link" href="cars.html#foreign-used">Explore</a>
+            </div>
+          </div>
+
+          <div class="wyw-div">
+            <h3>Import Car Of Your Choice</h3>
+
+            <p>
+              Get your preferred car imported to suit your needs and budget.
+            </p>
+
+            <div class="explore-link">
+              <a class="second-link" href="import-car.html">Explore</a>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <!-- Why choose us section -->
 
-      <section class="WCU-section"></section>
+      <section class="wcu-section">
+        <div class="choose">
+          <h2>Why Choose Us?</h2>
+
+          <ul class="wcu-list">
+            <li>
+              <h3>Door To Door Services</h3>
+
+              <p>Enjoy convenient vehicle delivery right to your doorstep.</p>
+            </li>
+
+            <li>
+              <h3>Budget-friendly Solutions</h3>
+
+              <p>Find suitable vehicles that fit your budget.</p>
+            </li>
+
+            <li>
+              <h3>Importation Made Easy</h3>
+
+              <p>We simplify the process of importing your preferred car.</p>
+            </li>
+
+            <li>
+              <h3>Quality Vehicles</h3>
+
+              <p>Discover quality vehicles you can drive with confidence.</p>
+            </li>
+          </ul>
+        </div>
+
+        <div class="values">
+          <h2>Our Core Values</h2>
+
+          <ul class="wcu-list">
+            <li>
+              <div class="value-icon">
+                <p class="icon"><i class="fa-solid fa-circle-check"></i></p>
+              </div>
+
+              <h3>Quality</h3>
+
+              <p>
+                We are committed to delivering quality vehicles and services.
+              </p>
+            </li>
+
+            <li>
+              <div class="value-icon">
+                <p class="icon"><i class="fa-solid fa-handshake"></i></p>
+              </div>
+
+              <h3>Integrity</h3>
+
+              <p>We conduct our business with honesty and transparency.</p>
+            </li>
+
+            <li>
+              <div class="value-icon">
+                <p class="icon"><i class="fa-solid fa-briefcase"></i></p>
+              </div>
+
+              <h3>Solid Experience</h3>
+
+              <p>We apply our knowledge and experience to serve you better.</p>
+            </li>
+
+            <li>
+              <div class="value-icon">
+                <p class="icon">
+                  <i class="fa-solid fa-user-shield"></i>
+                </p>
+              </div>
+
+              <h3>Trust & Reliability</h3>
+
+              <p>We build lasting relationships through dependable service.</p>
+            </li>
+          </ul>
+        </div>
+
+        <div class="wyc">
+          <h2>What You Can Do With Us</h2>
+
+          <ul class="wcu-list">
+            <li>
+              <a href="cars.html"
+                ><h3>Buy A Car <i class="fa-solid fa-arrow-right"></i></h3
+              ></a>
+
+              <p>Find your ideal car with us.</p>
+            </li>
+
+            <li>
+              <a href="sell-car.html"
+                ><h3>Sell A Car <i class="fa-solid fa-arrow-right"></i></h3
+              ></a>
+
+              <p>Sell your car with ease through our team.</p>
+            </li>
+
+            <li>
+              <a href="source-car.html"
+                ><h3>Car Sourcing <i class="fa-solid fa-arrow-right"></i></h3
+              ></a>
+
+              <p>Let us help you find your preferred vehicle.</p>
+            </li>
+
+            <li>
+              <a href="import-car.html"
+                ><h3>Import A Car <i class="fa-solid fa-arrow-right"></i></h3
+              ></a>
+
+              <p>
+                Get your preferred car imported to suit your needs and budget.
+              </p>
+            </li>
+          </ul>
+
+          <div class="more-link">
+            <a class="primary-link" href="contact.html">Contact Us</a>
+          </div>
+        </div>
+      </section>
 
       <!-- sell car section -->
 
-      <section class="sell-car"></section>
+      <section class="sell-section">
+        <div class="sell-div">
+          <div class="sell-text">
+            <h2>Sell A Car With MikeOke Motors</h2>
+
+            <p>
+              Ready to sell your car? Let our team help you make the process
+              simple and convenient.
+            </p>
+          </div>
+
+          <div class="sell-benefits">
+            <h3>Key benefits</h3>
+
+            <ul>
+              <li>Selling Your Car Made Simple</li>
+
+              <li>Direct communication with our team</li>
+
+              <li>Guidance throughout the selling process</li>
+            </ul>
+          </div>
+
+          <div class="explore-link">
+            <a class="second-link" href="sell-car.html">Sell A Car</a>
+          </div>
+        </div>
+      </section>
 
       <!-- Ready to buy section (Last) -->
 
-      <section class="sell-section"></section>
+      <section class="rtb-section">
+        <div class="rtb-text">
+          <h2>Ready to Find Your Next Car?</h2>
+
+          <p>
+            Whether you're looking to buy, sell, source, or import a car,
+            MikeOke Motors is ready to help you get started.
+          </p>
+        </div>
+
+        <div class="hero-links rtb-links">
+          <a href="cars.html">Explore Cars</a>
+
+          <a href="contact.html">Contact Us</a>
+        </div>
+      </section>
     </main>
 
     <!-- Footer -->
 
-    <footer></footer>
+    <footer>
+      <div class="upper-footer">
+        <div class="footer-intro">
+          <img src="images/logo-icon.webp" alt="MikeOke" />
+
+          <div>
+            <h2>MikeOke motors</h2>
+
+            <p>
+              MikeOke Motors makes buying, selling, sourcing, and importing
+              quality vehicles simple, convenient, and reliable.
+            </p>
+          </div>
+        </div>
+
+        <div>
+          <h2>Quick links</h2>
+
+          <ul>
+            <li><a href="index.html">Home</a></li>
+
+            <li><a href="cars.html">Cars</a></li>
+
+            <li><a href="about.html">About</a></li>
+
+            <li><a href="insight.html">Insights</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h2>Our Services</h2>
+
+          <ul>
+            <li><a href="cars.html">Buy A Car</a></li>
+
+            <li><a href="sell-car.html">Sell A Car</a></li>
+
+            <li><a href="source-car.html">Car Sourcing</a></li>
+
+            <li><a href="import-car.html">Import A Car</a></li>
+          </ul>
+        </div>
+
+        <div class="about">
+          <div>
+            <h2>Locate Us</h2>
+
+            <p>Molete, Challenge road, Ibadan, Oyo State, Nigeria</p>
+          </div>
+
+          <div>
+            <h2>Opening Hours</h2>
+
+            <p>Monday-Friday</p>
+
+            <p>9:00 AM - 6:00 PM</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="bottom-footer">
+        <ul class="footer-socials">
+          <li>
+            <a
+              href="https://www.facebook.com/share/1H89FxaxLc/?mibextid=wwXIfr"
+              target="_blank"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
+          </li>
+
+          <li>
+            <a
+              href="https://www.instagram.com/mikeokeventures?cplk=aXoxY3N6dDBoa3Jm&utm_source=qr"
+              target="_blank"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+          </li>
+
+          <li>
+            <a href="https://x.com/mikeokeventures?s=11" target="_blank"
+              ><i class="fa-brands fa-x-twitter"></i
+            ></a>
+          </li>
+
+          <li>
+            <a href="https://vm.tiktok.com/ZS9UySh4YJ87F-DuD43/" target="_blank"
+              ><i class="fa-brands fa-tiktok"></i
+            ></a>
+          </li>
+        </ul>
+
+        <p>
+          &copy; 2026 MikeOke Motors. <br />
+          All rights reserved
+        </p>
+      </div>
+    </footer>
   </body>
 </html>

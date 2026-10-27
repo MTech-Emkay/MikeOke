@@ -1,0 +1,321 @@
+/* Styling for the home page */
+
+/* Color variables */
+
+:root {
+  --primary-color: #172b4d;
+  --second-color: #24272b;
+  --third-color: #c0c5cc;
+  --fourth-color: #f3f5f7;
+}
+
+/* Hero section */
+.hero-section {
+  padding-inline: 2em;
+  padding-block-start: 3em;
+  background-image: url(/images/bg-images/Lexus\ owner\ for\ a\ day.webp);
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  justify-content: center;
+  position: relative;
+  color: white;
+}
+
+.hero-section::before {
+  position: absolute;
+  content: "";
+  inset: 0;
+  background: linear-gradient(to right, #172b4dd3, #172b4d73);
+}
+
+.hero-section p {
+  padding-block-start: 1em;
+}
+
+.hero-section h1,
+.hero-section p,
+.hero-section div {
+  z-index: 5;
+}
+
+.hero-section span {
+  color: var(--primary-color);
+}
+
+.go-down,
+.hero-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.hero-links a {
+  background-color: var(--second-color);
+  padding: 1em;
+  transition: 0.2s;
+  border: 2px solid var(--second-color);
+  border-radius: 15px;
+}
+
+.hero-links :last-child {
+  background: none;
+}
+
+.hero-links :first-child:hover {
+  background: none;
+  border: 2px solid var(--second-color);
+}
+
+.hero-links :last-child:hover {
+  background-color: var(--second-color);
+}
+
+.go-down a {
+  background-color: var(--primary-color);
+  padding: 1em;
+  border-radius: 50%;
+  box-shadow: 2px 2px 25px var(--primary-color);
+  transition: transform 0.2s ease;
+}
+
+.go-down a:hover {
+  transform: translate(-1px, -3px);
+}
+
+/* Featured section */
+.featured-section {
+  padding-inline: 2em;
+  padding-block: 3em;
+  background-color: var(--fourth-color);
+}
+
+.car-cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2em;
+  padding-block: 2em;
+}
+
+.car-div {
+  box-shadow: 5px 5px 20px var(--third-color);
+  border-radius: 20px;
+  /* padding: 1em; */
+}
+
+.car-div img {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.car-details,
+.more-link {
+  padding-inline: 1em;
+  padding-block: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+.more-link {
+  padding-inline: 1.5em;
+}
+
+.car-details span {
+  font-weight: 600;
+}
+
+.view-link {
+  display: flex;
+  justify-content: center;
+}
+
+/* What do you want section */
+
+.wyw-section {
+  padding-inline: 2em;
+  padding-block: 2em;
+  /* background-color: var(--third-color); */
+}
+
+.wyw-section h2 {
+  padding-block: 0.2em 0.8em;
+}
+
+.wyw-cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2em;
+}
+
+.wyw-div {
+  position: relative;
+  padding: 1em;
+  border-radius: 20px;
+  box-shadow: 1px 1px 10px var(--third-color);
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+/* .wyw-div::after {
+  content: "";
+  position: absolute;
+  background-color: var(--second-color);
+  height: 1px;
+  width: 100%;
+} */
+
+.explore-link {
+  padding-block: 1.5em;
+}
+
+/* Why choose us section */
+
+.wcu-section {
+  padding-inline: 2em;
+  /* background-color: var(--fourth-color); */
+  padding-block: 3em;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.wcu-section h2 {
+  padding-block: 0.5em;
+  border-bottom: 1px solid;
+  border-top: 1px solid;
+}
+
+.wcu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  padding-block-start: 1.5em;
+}
+
+.wcu-list li {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.values li {
+  background-color: var(--primary-color);
+  color: var(--fourth-color);
+  padding: 1.5em 1em;
+  border-radius: 20px;
+}
+
+.value-icon {
+  display: flex;
+  align-items: start;
+}
+
+.icon {
+  background-color: var(--third-color);
+  padding: 0.8em;
+  color: var(--primary-color);
+  border-radius: 10px;
+}
+
+.icon i {
+  font-size: 1.6rem;
+}
+
+.wcu-list a:hover {
+  color: var(--primary-color);
+  transition: 0.2s ease;
+}
+
+/* Sell car section */
+
+.sell-section {
+  padding-inline: 2em;
+  /* background-color: var(--third-color); */
+  background: url("/images/car-selling.webp");
+  background-size: cover;
+  padding-block-end: 4em;
+  /* color: white; */
+  position: relative;
+  /* color: white; */
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+}
+
+/* .sell-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, #172b4d, #172b4d59);
+} */
+
+.sell-div {
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  gap: 2em;
+  background-color: var(--fourth-color);
+  padding: 1em;
+}
+
+.sell-text h2 {
+  padding-block: 0.5em;
+}
+
+.sell-benefits {
+  background-color: var(--primary-color);
+  color: var(--fourth-color);
+  padding-inline: 2em 0.4em;
+  padding-block: 1em;
+  border-radius: 20px;
+}
+
+.sell-benefits ul {
+  padding-block-start: 0.5em;
+  list-style: square;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3em;
+}
+
+/* Ready to buy (Last) section */
+
+.rtb-section {
+  padding-inline: 2em;
+  padding-block: 2em;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.rtb-section h2 {
+  padding-block-end: 0.5em;
+  text-align: center;
+}
+
+.rtb-links {
+  flex-direction: row;
+  justify-content: center;
+  gap: 1em;
+  align-items: center;
+}
+
+.rtb-links :first-child {
+  color: white;
+}
+
+.rtb-links :first-child:hover {
+  color: black;
+}
+
+.rtb-links :last-child:hover {
+  color: white;
+}
