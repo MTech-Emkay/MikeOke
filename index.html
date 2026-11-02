@@ -80,6 +80,10 @@
     />
     <link rel="manifest" href="/site.webmanifest" />
 
+    <!-- Scroll Animation -->
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
     <!-- Stylesheet/Css -->
 
     <link rel="stylesheet" href="styles/general.css" />
@@ -90,7 +94,7 @@
     <!-- Back to top button/link -->
 
     <a class="back-to-top" href="#" hidden
-      >Back to top <i class="fa-solid fa-arrow-up"></i
+      ><i class="fa-solid fa-arrow-up"></i
     ></a>
 
     <!-- Header -->
@@ -128,31 +132,33 @@
           </li>
 
           <li class="services">
-            <button>
+            <a class="services-a">
               Services
-              <i class="fa-solid fa-angle-down"></i>
-            </button>
+              <i class="fa-solid fa-angle-down dropdown-icon"></i>
+            </a>
 
-            <div class="services-dropdown" hidden>
-              <h3>What You Can Do With MikeOke</h3>
+            <div class="dropdown-div">
+              <div class="services-dropdown" hidden>
+                <h3>What You Can Do With MikeOke</h3>
 
-              <ul>
-                <li>
-                  <a href="cars.html">Buy Car</a>
-                </li>
+                <ul class="services-list">
+                  <li>
+                    <a href="cars.html">Buy Car</a>
+                  </li>
 
-                <li>
-                  <a href="import-car.html">Import Car</a>
-                </li>
+                  <li>
+                    <a href="import-car.html">Import Car</a>
+                  </li>
 
-                <li>
-                  <a href="source-car.html">Car Sourcing</a>
-                </li>
+                  <li>
+                    <a href="source-car.html">Car Sourcing</a>
+                  </li>
 
-                <li>
-                  <a href="sell-car.html">Sell Car</a>
-                </li>
-              </ul>
+                  <li>
+                    <a href="sell-car.html">Sell Car</a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </li>
 
@@ -191,7 +197,7 @@
     <main>
       <!-- Hero section -->
 
-      <section id="index" class="hero-section">
+      <section class="hero-section">
         <div class="hero-text">
           <h1 class="hero-header">
             Find Your Perfect Car. <br />
@@ -222,7 +228,7 @@
         <h2>Featured Cars</h2>
 
         <div class="car-cards">
-          <div class="car-div">
+          <div data-aos="fade-up" class="car-div">
             <img
               src="images/cars/honda-pilot/IMG-20261012-WA0020.webp"
               alt="Honda Pilot"
@@ -244,7 +250,7 @@
             </div>
           </div>
 
-          <div class="car-div">
+          <div data-aos="fade-up" class="car-div">
             <img
               src="images/cars/nissan-pathfinder/IMG-20261014-WA0010.webp"
               alt="Nissan Pathfinder"
@@ -266,7 +272,7 @@
             </div>
           </div>
 
-          <div class="car-div">
+          <div data-aos="fade-up" class="car-div">
             <img
               src="images/cars/toyota-highlander/IMG-20261014-WA0008.jpg"
               alt="Toyota Highlander"
@@ -288,7 +294,7 @@
             </div>
           </div>
 
-          <div class="car-div">
+          <div data-aos="fade-up" class="car-div">
             <img
               src="images/cars/toyota-sienna/IMG-20261014-WA0020.jpg"
               alt="Toyota Sienna"
@@ -323,7 +329,7 @@
         <h2>What Do You Want?</h2>
 
         <div class="wyw-cards">
-          <div class="wyw-div">
+          <div data-aos="fade-up" class="wyw-div">
             <h3>Nigerian Used Cars</h3>
 
             <p>Explore quality pre-owned cars available within Nigeria.</p>
@@ -333,7 +339,7 @@
             </div>
           </div>
 
-          <div class="wyw-div">
+          <div data-aos="fade-up" class="wyw-div">
             <h3>Foreign Used Cars</h3>
 
             <p>Discover quality vehicles imported from abroad.</p>
@@ -343,7 +349,7 @@
             </div>
           </div>
 
-          <div class="wyw-div">
+          <div data-aos="fade-up" class="wyw-div">
             <h3>Import Car Of Your Choice</h3>
 
             <p>
@@ -360,7 +366,7 @@
       <!-- Why choose us section -->
 
       <section class="wcu-section">
-        <div class="choose">
+        <div data-aos="fade-up" class="choose">
           <h2>Why Choose Us?</h2>
 
           <ul class="wcu-list">
@@ -391,10 +397,10 @@
         </div>
 
         <div class="values">
-          <h2>Our Core Values</h2>
+          <h2 data-aos="fade-up">Our Core Values</h2>
 
           <ul class="wcu-list">
-            <li>
+            <li data-aos="fade-up">
               <div class="value-icon">
                 <p class="icon"><i class="fa-solid fa-circle-check"></i></p>
               </div>
@@ -406,7 +412,7 @@
               </p>
             </li>
 
-            <li>
+            <li data-aos="fade-up">
               <div class="value-icon">
                 <p class="icon"><i class="fa-solid fa-handshake"></i></p>
               </div>
@@ -416,7 +422,7 @@
               <p>We conduct our business with honesty and transparency.</p>
             </li>
 
-            <li>
+            <li data-aos="fade-up">
               <div class="value-icon">
                 <p class="icon"><i class="fa-solid fa-briefcase"></i></p>
               </div>
@@ -426,7 +432,7 @@
               <p>We apply our knowledge and experience to serve you better.</p>
             </li>
 
-            <li>
+            <li data-aos="fade-up">
               <div class="value-icon">
                 <p class="icon">
                   <i class="fa-solid fa-user-shield"></i>
@@ -440,7 +446,7 @@
           </ul>
         </div>
 
-        <div class="wyc">
+        <div data-aos="fade-up" class="wyc">
           <h2>What You Can Do With Us</h2>
 
           <ul class="wcu-list">
@@ -479,7 +485,7 @@
             </li>
           </ul>
 
-          <div class="more-link">
+          <div class="more-link wyc-link">
             <a class="primary-link" href="contact.html">Contact Us</a>
           </div>
         </div>
@@ -488,26 +494,28 @@
       <!-- sell car section -->
 
       <section class="sell-section">
-        <div class="sell-div">
-          <div class="sell-text">
-            <h2>Sell A Car With MikeOke Motors</h2>
+        <div class="sell-bg">
+          <div class="sell-div">
+            <div class="sell-text">
+              <h2>Sell A Car With MikeOke Motors</h2>
 
-            <p>
-              Ready to sell your car? Let our team help you make the process
-              simple and convenient.
-            </p>
-          </div>
+              <p>
+                Ready to sell your car? Let our team help you make the process
+                simple and convenient.
+              </p>
+            </div>
 
-          <div class="sell-benefits">
-            <h3>Key benefits</h3>
+            <div data-aos="fade-up" class="sell-benefits">
+              <h3>Key benefits</h3>
 
-            <ul>
-              <li>Selling Your Car Made Simple</li>
+              <ul>
+                <li>Selling Your Car Made Simple</li>
 
-              <li>Direct communication with our team</li>
+                <li>Direct communication with our team</li>
 
-              <li>Guidance throughout the selling process</li>
-            </ul>
+                <li>Guidance throughout the selling process</li>
+              </ul>
+            </div>
           </div>
 
           <div class="explore-link">
@@ -518,7 +526,7 @@
 
       <!-- Ready to buy section (Last) -->
 
-      <section class="rtb-section">
+      <section data-aos="fade-up" class="rtb-section">
         <div class="rtb-text">
           <h2>Ready to Find Your Next Car?</h2>
 
@@ -563,11 +571,11 @@
 
             <li><a href="about.html">About</a></li>
 
-            <li><a href="insight.html">Insights</a></li>
+            <li><a href="faq.html">FAQ</a></li>
           </ul>
         </div>
 
-        <div>
+        <div class="footer-services">
           <h2>Our Services</h2>
 
           <ul>
@@ -636,4 +644,10 @@
       </div>
     </footer>
   </body>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <script>
+    AOS.init();
+  </script>
 </html>

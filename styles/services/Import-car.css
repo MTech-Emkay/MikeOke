@@ -1,0 +1,89 @@
+/* Color variables */
+
+:root {
+  --primary-color: #172b4d;
+  --second-color: #24272b;
+  --third-color: #c0c5cc;
+  --fourth-color: #f3f5f7;
+}
+
+/* Hero section */
+
+.hero-section {
+  padding-inline: 2em;
+  /* padding-block-start: 3em; */
+  background-image: url(/images/importation.webp);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* gap: 1em; */
+  position: relative;
+  color: white;
+}
+
+.hero-section::before {
+  position: absolute;
+  content: "";
+  inset: 0;
+  background: linear-gradient(to right, #172b4dd3, #172b4d73);
+}
+
+.hero-section p,
+.hero-section h1,
+.hero-section a {
+  z-index: 5;
+  text-align: center;
+}
+
+.hero-section h1 {
+  border-bottom: 1px solid;
+  border-top: 1px solid;
+  padding-block: 0.2em;
+}
+
+.hero-section a {
+  background-color: var(--second-color);
+  padding: 0.5em 1em;
+  border-radius: 10px;
+  transition: 0.2s;
+  border: 2px solid var(--second-color);
+}
+
+.hero-text {
+  padding-block: 0.7em 3em;
+}
+
+.hero-section a:hover {
+  background: none;
+}
+
+/* Preference section */
+
+.preference-section {
+  padding-inline: 2em;
+  padding-block: 3.5em;
+}
+
+.preference-section h2 {
+  padding-block-end: 0.8em;
+}
+
+.wyw-cards {
+  display: grid;
+  gap: 2em;
+  padding-block-end: 1.5em;
+}
+
+.wyw-div {
+  position: relative;
+  padding: 1.5em 1em;
+  border-radius: 20px;
+  box-shadow: 1px 1px 10px var(--third-color);
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}

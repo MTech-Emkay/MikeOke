@@ -9,7 +9,7 @@
       name="description"
       content="Looking to import a car to Nigeria? Contact MikeOke Motors to discuss vehicle sourcing, import costs, shipping arrangements and delivery options."
     />
-    <meta name="theme-color" content="#000052" />
+    <meta name="theme-color" content="#172b4d" />
 
     <!-- open graph -->
 
@@ -80,6 +80,10 @@
     />
     <link rel="manifest" href="/site.webmanifest" />
 
+    <!-- Scroll Animation -->
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
     <!-- Stylesheet/Css -->
 
     <link rel="stylesheet" href="styles/general.css" />
@@ -89,16 +93,18 @@
   <body>
     <!-- Back to top button/link -->
 
-    <a href="#index">Back to top <i class="fa-solid fa-arrow-up"></i></a>
+    <a class="back-to-top" href="#" hidden
+      ><i class="fa-solid fa-arrow-up"></i
+    ></a>
 
     <!-- Header -->
 
     <header>
       <!-- Company logo -->
 
-      <a href="index.html"
-        ><img src="images/logo-icon .webp" alt="MikeOke" /> MikeOke motors</a
-      >
+      <a class="header-logo" href="index.html"
+        ><img src="images/logo.webp" alt="MikeOke"
+      /></a>
 
       <!-- Navigation Links -->
 
@@ -182,9 +188,9 @@
       <section class="hero-section">
         <p class="eyebrow">CAR IMPORTATION WITH MIKEOKE MOTORS</p>
 
-        <h1>Import Your Car With Confidence</h1>
+        <h1>Import Your Dream Car With Confidence</h1>
 
-        <p>
+        <p class="hero-text">
           Looking to import a car into Nigeria? MikeOke Motors helps you explore
           your options, source your preferred vehicle, and understand the steps
           involved in bringing it into the country. From choosing the right car
@@ -192,55 +198,50 @@
           decisions.
         </p>
 
-        <a href="#preference"
-          >How It Works <i class="fa-solid fa-arrow-down"></i
-        ></a>
+        <a href="#how">How It Works <i class="fa-solid fa-arrow-down"></i></a>
       </section>
 
       <section id="preference" class="preference-section">
-        <p class="eyebrow">IMPORT THE CAR YOU WANT</p>
+        <p class="eyebrow">Your Preferred Car, Your Specifications</p>
 
-        <h2>Your Preferred Car, Your Specifications</h2>
+        <h2>Tell Us What You Want</h2>
 
-        <p>
-          Let's discuss the options available for importing a vehicle that suits
-          your needs and budget.
-        </p>
-
-        <ul>
-          <li>
+        <div class="wyw-cards">
+          <div data-aos="fade-up" class="wyw-div">
             <h3>Choose your Preferred Model</h3>
 
             <p>Tell us the make, model, year, and trim you're interested in.</p>
-          </li>
+          </div>
 
-          <li>
+          <div data-aos="fade-up" class="wyw-div">
             <h3>Specify Your Requirements</h3>
 
             <p>
               Discuss your preferred transmission, fuel type, colour, features,
               and other specifications.
             </p>
-          </li>
+          </div>
 
-          <li>
+          <div data-aos="fade-up" class="wyw-div">
             <h3>Plan Around Your Budget</h3>
 
             <p>
               Share your budget so you can discuss suitable vehicles and the
               estimated total cost of importing them.
             </p>
-          </li>
-        </ul>
+          </div>
+        </div>
 
-        <button
-          class="contact-options"
+        <div
           aria-controls="contacts"
           aria-expanded="false"
+          class="contact-options"
         >
-          Tell Us Which Car You Want <i class="fa-solid fa-angle-down"></i>
+          <button class="contact-button">
+            Make Enquiries <i class="fa-solid fa-angle-down dropdown-icon"></i>
+          </button>
 
-          <ul aria-hidden="true" aria-label="contacts" hidden>
+          <ul class="contacts" aria-hidden="true" aria-label="contacts" hidden>
             <li>
               <a href="https://wa.me/message/ZYFABMOAALL4M1" target="_blank">
                 <i class="fa-brands fa-whatsapp"></i> Chat with us
@@ -263,52 +264,10 @@
               </a>
             </li>
           </ul>
-        </button>
+        </div>
       </section>
 
-      <section class="wcu-section">
-        <h1>Why Choose Us?</h1>
-
-        <ul>
-          <li>
-            <h3>Vehicle Sourcing</h3>
-
-            <p>
-              We help you find your preferred car based on your needs,
-              specifications, and budget.
-            </p>
-          </li>
-
-          <li>
-            <h3>Budget Planning</h3>
-
-            <p>
-              We help you plan your budget by considering the vehicle price and
-              other expected import expenses
-            </p>
-          </li>
-
-          <li>
-            <h3>Shipping and Import Coordination</h3>
-
-            <p>
-              We help coordinate the shipping and import process to bring your
-              chosen vehicle to Nigeria.
-            </p>
-          </li>
-
-          <li>
-            <h3>Documentation and Clearing</h3>
-
-            <p>
-              We assist with the necessary import documentation and customs
-              clearing procedures to help ensure a smooth process.
-            </p>
-          </li>
-        </ul>
-      </section>
-
-      <section>
+      <section id="how" class="how-section">
         <p class="eyebrow">Your Import Journey, Step by Step</p>
 
         <h2>How Car Importation Works</h2>
@@ -362,7 +321,7 @@
         </ol>
       </section>
 
-      <section>
+      <section class="budget-section">
         <p class="eyebrow">UNDERSTAND THE COST BEFORE YOU IMPORT</p>
 
         <h2>Budget And Important Considerations</h2>
@@ -402,6 +361,48 @@
             <p>
               Depending on the arrangements, these may include inspection,
               delivery, etc.
+            </p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="wcu-section">
+        <h1>Why Choose Us?</h1>
+
+        <ul>
+          <li>
+            <h3>Vehicle Sourcing</h3>
+
+            <p>
+              We help you find your preferred car based on your needs,
+              specifications, and budget.
+            </p>
+          </li>
+
+          <li>
+            <h3>Budget Planning</h3>
+
+            <p>
+              We help you plan your budget by considering the vehicle price and
+              other expected import expenses
+            </p>
+          </li>
+
+          <li>
+            <h3>Shipping and Import Coordination</h3>
+
+            <p>
+              We help coordinate the shipping and import process to bring your
+              chosen vehicle to Nigeria.
+            </p>
+          </li>
+
+          <li>
+            <h3>Documentation and Clearing</h3>
+
+            <p>
+              We assist with the necessary import documentation and customs
+              clearing procedures to help ensure a smooth process.
             </p>
           </li>
         </ul>
@@ -601,4 +602,10 @@
       </div>
     </footer>
   </body>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <script>
+    AOS.init();
+  </script>
 </html>

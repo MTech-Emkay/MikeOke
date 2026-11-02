@@ -45,21 +45,28 @@
   color: var(--primary-color);
 }
 
-.go-down,
-.hero-links {
+.go-down {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
   gap: 1em;
+}
+
+.hero-links {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  /* max-width: 100%; */
+  margin-inline: auto;
+  gap: 1rem;
 }
 
 .hero-links a {
   background-color: var(--second-color);
-  padding: 1em;
+  padding: 1em 2em;
   transition: 0.2s;
   border: 2px solid var(--second-color);
-  border-radius: 15px;
+  border-radius: 10px;
 }
 
 .hero-links :last-child {
@@ -90,7 +97,7 @@
 /* Featured section */
 .featured-section {
   padding-inline: 2em;
-  padding-block: 3em;
+  padding-block: 3.5em;
   background-color: var(--fourth-color);
 }
 
@@ -112,8 +119,7 @@
   border-top-right-radius: 20px;
 }
 
-.car-details,
-.more-link {
+.car-details {
   padding-inline: 1em;
   padding-block: 1em;
   display: flex;
@@ -122,7 +128,10 @@
 }
 
 .more-link {
+  padding-block: 1em;
   padding-inline: 1.5em;
+  display: flex;
+  flex-direction: column;
 }
 
 .car-details span {
@@ -138,7 +147,7 @@
 
 .wyw-section {
   padding-inline: 2em;
-  padding-block: 2em;
+  padding-block: 3.5em;
   /* background-color: var(--third-color); */
 }
 
@@ -147,9 +156,7 @@
 }
 
 .wyw-cards {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  display: grid;
   gap: 2em;
 }
 
@@ -180,10 +187,10 @@
 .wcu-section {
   padding-inline: 2em;
   /* background-color: var(--fourth-color); */
-  padding-block: 3em;
+  padding-block: 3.5em;
   display: flex;
   flex-direction: column;
-  gap: 2em;
+  gap: 3em;
 }
 
 .wcu-section h2 {
@@ -193,8 +200,7 @@
 }
 
 .wcu-list {
-  display: flex;
-  flex-direction: column;
+  display: grid;
   gap: 2em;
   padding-block-start: 1.5em;
 }
@@ -240,7 +246,7 @@
   /* background-color: var(--third-color); */
   background: url("/images/car-selling.webp");
   background-size: cover;
-  padding-block-end: 4em;
+  padding-block-end: 3.5em;
   /* color: white; */
   position: relative;
   /* color: white; */
@@ -256,14 +262,19 @@
   background: linear-gradient(to bottom, #172b4d, #172b4d59);
 } */
 
+.sell-bg {
+  background-color: var(--fourth-color);
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
 .sell-div {
   z-index: 5;
   display: flex;
   flex-direction: column;
-  position: relative;
   gap: 2em;
-  background-color: var(--fourth-color);
-  padding: 1em;
 }
 
 .sell-text h2 {
@@ -275,7 +286,7 @@
   color: var(--fourth-color);
   padding-inline: 2em 0.4em;
   padding-block: 1em;
-  border-radius: 20px;
+  border-radius: 12px;
 }
 
 .sell-benefits ul {
@@ -283,14 +294,14 @@
   list-style: square;
   display: flex;
   flex-direction: column;
-  gap: 0.3em;
+  gap: 0.5em;
 }
 
 /* Ready to buy (Last) section */
 
 .rtb-section {
   padding-inline: 2em;
-  padding-block: 2em;
+  padding-block: 3.5em;
   display: flex;
   flex-direction: column;
   gap: 2em;
@@ -302,10 +313,7 @@
 }
 
 .rtb-links {
-  flex-direction: row;
-  justify-content: center;
   gap: 1em;
-  align-items: center;
 }
 
 .rtb-links :first-child {
@@ -318,4 +326,131 @@
 
 .rtb-links :last-child:hover {
   color: white;
+}
+
+/* Media Queries */
+
+/* Tablet Screens */
+
+@media (min-width: 768px) {
+  /* Hero section */
+
+  .hero-section {
+    gap: 5em;
+    padding-inline: 4em;
+  }
+
+  .hero-text {
+    max-width: 70%;
+  }
+
+  .hero-links {
+    flex-direction: row;
+    margin-inline: initial;
+  }
+
+  /* featured section */
+
+  .featured-section {
+    padding-inline: 4em;
+  }
+
+  .car-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* What do you want section */
+
+  .wyw-section {
+    padding-inline: 4em;
+  }
+
+  .wyw-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Why choose us section */
+
+  .wcu-section {
+    padding-inline: 4em;
+  }
+
+  .wcu-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .wyc-link {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .wyc-link .primary-link {
+    padding-inline: 5em;
+  }
+
+  /* sell car section */
+
+  .sell-section {
+    padding-inline: 4em;
+  }
+
+  .sell-div {
+    flex-direction: row;
+  }
+
+  /* rtb section */
+
+  .rtb-section {
+    padding-inline: 4em;
+  }
+
+  .rtb-section h2 {
+    text-align: start;
+  }
+}
+
+/* Desktop screens */
+
+@media (min-width: 1200px) {
+  /* Featured section */
+
+  .car-cards {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  /* What do you want section */
+
+  .wyw-cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .wcu-section {
+    gap: 5em;
+    text-align: center;
+  }
+
+  .values .wcu-list {
+    text-align: start;
+  }
+
+  .values .wcu-list {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .wyc .wcu-list {
+    padding-block-end: 1em;
+  }
+
+  /* Ready to buy section (Last) */
+
+  .rtb-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .rtb-text {
+    width: 60%;
+  }
 }
