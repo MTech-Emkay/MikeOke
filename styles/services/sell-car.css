@@ -1,0 +1,322 @@
+/* Color variables */
+
+:root {
+  --primary-color: #172b4d;
+  --second-color: #24272b;
+  --third-color: #c0c5cc;
+  --fourth-color: #f3f5f7;
+}
+
+/* Hero section */
+
+.hero-section {
+  padding-inline: 2em;
+  /* padding-block-start: 3em; */
+  background-image: url(/images/car-selling.webp);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5em;
+  position: relative;
+  color: white;
+}
+
+.hero-section::before {
+  position: absolute;
+  content: "";
+  inset: 0;
+  background: linear-gradient(to right, #172b4dd3, #172b4d73);
+}
+
+.hero-text {
+  z-index: 5;
+  position: relative;
+  text-align: center;
+}
+
+.hero-section h1 {
+  border-bottom: 1px solid;
+  /* border-top: 1px solid; */
+  padding-block: 0.2em;
+}
+
+.hero-text p {
+  padding-block-start: 1em;
+}
+
+.hero-section a {
+  background-color: var(--second-color);
+  padding: 1em 2em;
+  /* border-radius: 10px; */
+  transition: 0.2s;
+  border: 2px solid var(--third-color);
+  box-shadow: 5px 5px 20px var(--primary-color);
+  z-index: 5;
+}
+
+.hero-section a:hover {
+  background: none;
+}
+
+/* Seling options section */
+
+.sell-opt-section {
+  padding: 2em;
+  /* background-color: var(--fourth-color); */
+}
+
+.sell-opt-section h2 {
+  padding-block: 1em;
+}
+
+.sell-options {
+  display: grid;
+  gap: 3em;
+}
+
+.sell-option {
+  box-shadow: 5px 5px 20px var(--third-color);
+  border-radius: 20px;
+}
+
+.sell-option img {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.opt-details {
+  padding-inline: 1em;
+  padding-block: 1em 1.5em;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  align-items: start;
+}
+
+.opt-details p {
+  padding-block-end: 1.5em;
+}
+
+/* How it works section */
+
+.how-section {
+  padding: 2em;
+  background-color: var(--fourth-color);
+}
+
+.how-section h2 {
+  border-bottom: 1px solid;
+  padding-block: 0.3em;
+}
+
+.how-list {
+  padding-block-start: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 3.5em;
+  position: relative;
+}
+
+.numbering {
+  height: 40px;
+  width: 40px;
+  font-size: 1.2em;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: /*var(--primary-color)*/ var(--third-color);
+  color: var(--second-color);
+  z-index: 2;
+}
+
+.how-list::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 2px;
+  background-color: var(--second-color);
+  left: 20px;
+}
+
+.how-list li {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.how-list div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3em;
+}
+
+/* Information section */
+
+.information-section {
+  padding: 2em;
+  background-color: var(--fourth-color);
+}
+
+.information-section h2 {
+  padding-block: 0.2em;
+  border-bottom: 1px solid;
+}
+
+.information-list {
+  display: grid;
+  gap: 2em;
+  padding-block-start: 1.5em;
+}
+
+.information-section li {
+  box-shadow: -2px 2px 10px var(--third-color);
+  padding: 2em 1em;
+  border-radius: 20px;
+}
+
+.information-section h3 {
+  padding-block: 0.5em 1em;
+}
+
+/* Frequently asked question section */
+
+.faq-section {
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  align-items: center;
+}
+
+.faq-div {
+  border: 2px solid;
+  padding: 1em;
+  border-radius: 15px;
+  width: 100%;
+}
+
+.faq-div h2 {
+  padding-block-end: 1.5em;
+}
+
+.faq-div ul {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.faq-div li {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+.faq-div h3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5em;
+  cursor: pointer;
+}
+
+/* Last section */
+
+.last-section {
+  padding: 2em;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5em;
+  background-color: var(--fourth-color);
+}
+
+.last-section h2 {
+  padding-block-end: 0.5em;
+}
+
+/* Media queries */
+
+/* Tablet Screens */
+
+@media (min-width: 768px) {
+  /* Hero section */
+
+  .hero-section {
+    padding-inline: 4em;
+  }
+
+  /* Seling options section */
+
+  .sell-opt-section {
+    padding: 4em;
+  }
+
+  /* How it works section */
+
+  .how-section {
+    padding: 4em;
+  }
+
+  /* Information section */
+
+  .information-section {
+    padding: 4em;
+  }
+
+  .information-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Frequently asked questions section */
+
+  .faq-section {
+    padding-inline: 4em;
+  }
+
+  /* Last section */
+
+  .last-section {
+    padding-inline: 4em;
+  }
+}
+
+/* Desktop screens */
+
+@media (min-width: 1200px) {
+  /* Hero section */
+
+  .hero-text {
+    width: 70%;
+  }
+
+  /* Seling options section */
+
+  .sell-options {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Information section */
+
+  .information-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* Last section */
+
+  .last-section {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .last-text {
+    width: 70%;
+    text-align: start;
+  }
+}

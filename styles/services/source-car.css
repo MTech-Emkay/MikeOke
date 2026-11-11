@@ -1,0 +1,412 @@
+/* Color variables */
+
+:root {
+  --primary-color: #172b4d;
+  --second-color: #24272b;
+  --third-color: #c0c5cc;
+  --fourth-color: #f3f5f7;
+}
+
+/* Hero section */
+
+.hero-section {
+  padding-inline: 2em;
+  /* padding-block-start: 3em; */
+  background-image: url(/images/car-sourcing.webp);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5em;
+  position: relative;
+  color: white;
+}
+
+.hero-section::before {
+  position: absolute;
+  content: "";
+  inset: 0;
+  background: linear-gradient(to right, #172b4dd3, #172b4d73);
+}
+
+.hero-text {
+  z-index: 5;
+  position: relative;
+  text-align: center;
+}
+
+.hero-section h1 {
+  border-bottom: 1px solid;
+  /* border-top: 1px solid; */
+  padding-block: 0.2em;
+}
+
+.hero-text p {
+  padding-block-start: 1em;
+}
+
+.hero-links {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  /* max-width: 100%; */
+  margin-inline: auto;
+  gap: 1rem;
+  z-index: 5;
+}
+
+.hero-links a {
+  background-color: var(--second-color);
+  padding: 1em 2em;
+  transition: 0.2s;
+  border: 2px solid var(--third-color);
+  /* box-shadow: 2px 2px 10px var(--primary-color); */
+}
+
+.hero-links :last-child {
+  background: none;
+}
+
+.hero-links :first-child:hover {
+  background: none;
+  /* border: 2px solid var(--second-color); */
+}
+
+.hero-links :last-child:hover {
+  background-color: var(--second-color);
+}
+
+/* Source help section */
+
+.source-help-section {
+  padding: 2em;
+}
+
+.source-help-section h2 {
+  padding-block-end: 0.8em;
+}
+
+.source-help-container {
+  display: grid;
+  gap: 2em;
+  padding-block-end: 1.5em;
+}
+
+.source-help-card {
+  position: relative;
+  padding: 1.5em 1em;
+  border-radius: 20px;
+  box-shadow: 2px 2px 10px var(--third-color);
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+/* How it works section */
+
+.how-section {
+  padding: 2em;
+  background-color: var(--fourth-color);
+}
+
+.how-section h2 {
+  border-bottom: 1px solid;
+  padding-block: 0.3em;
+}
+
+.how-list {
+  padding-block-start: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 3.5em;
+  position: relative;
+}
+
+.numbering {
+  height: 40px;
+  width: 40px;
+  font-size: 1.2em;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: /*var(--primary-color)*/ var(--third-color);
+  color: var(--second-color);
+  z-index: 2;
+}
+
+.how-list::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 2px;
+  background-color: var(--second-color);
+  left: 20px;
+}
+
+.how-list li {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.how-list div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3em;
+}
+
+/* Help us section */
+
+.help-us-section {
+  padding: 2em;
+  background-color: var(--fourth-color);
+}
+
+.help-us-section h2 {
+  padding-block: 0.2em 1em;
+}
+
+.help-us-section ul {
+  display: grid;
+  gap: 1.5em;
+  padding-block-end: 2em;
+}
+
+.help-us-section li {
+  box-shadow: -2px 2px 10px var(--third-color);
+  padding: 2em 1em;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.help-us-section span {
+  font-weight: 600;
+}
+
+/* Why choose us section */
+
+.wcu-section {
+  padding: 2em;
+}
+
+.wcu-section h2 {
+  padding-block-end: 0.5em;
+  border-bottom: 1px solid;
+}
+
+.wcu-section h3 {
+  padding-block-end: 0.5em;
+}
+
+.wcu-icon {
+  height: 55px;
+  width: 55px;
+  font-size: 1.5rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--third-color);
+  color: var(--primary-color);
+}
+
+.wcu-section ul {
+  display: grid;
+  gap: 2.5em;
+  padding-block-start: 2em;
+}
+
+.wcu-section li {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 0.5em;
+}
+
+/* Frequently asked questions section */
+
+.faq-section {
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  align-items: center;
+}
+
+.faq-div {
+  border: 2px solid;
+  padding: 1em;
+  border-radius: 15px;
+  width: 100%;
+}
+
+.faq-div h2 {
+  padding-block-end: 1.5em;
+}
+
+.faq-div ul {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.faq-div li {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+.faq-div h3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5em;
+  cursor: pointer;
+}
+
+/* Last section */
+
+.last-section {
+  padding: 2em;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5em;
+  background-color: var(--fourth-color);
+}
+
+.last-section h2 {
+  padding-block-end: 0.5em;
+}
+
+/* Media queries */
+
+/* Tablet Screens */
+
+@media (min-width: 798px) {
+  /* Hero section */
+
+  .hero-section {
+    padding-inline: 4em;
+  }
+
+  /* Source help section */
+
+  .source-help-section {
+    padding-inline: 4em;
+  }
+
+  .source-help-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* How it works section */
+
+  .how-section {
+    padding-inline: 4em;
+  }
+
+  /* Help us section */
+  .help-us-section {
+    padding-inline: 4em;
+  }
+
+  .help-us-section ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Why choose us section */
+
+  .wcu-section {
+    padding-inline: 4em;
+  }
+
+  /* Frequently asked question section */
+
+  .faq-section {
+    padding-inline: 4em;
+  }
+
+  /* Last section */
+
+  .last-section {
+    padding-inline: 4em;
+  }
+}
+
+/* Desktop screens */
+
+@media (min-width: 1200px) {
+  /* Hero section */
+
+  .hero-section {
+    padding-inline: 6em;
+  }
+
+  .hero-text {
+    width: 70%;
+  }
+
+  /* Source help section */
+
+  .source-help-section {
+    padding-inline: 6em;
+  }
+
+  .source-help-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* How it works */
+
+  .how-section {
+    padding-inline: 6em;
+  }
+
+  /* Help us section */
+
+  .help-us-section {
+    padding-inline: 6em;
+  }
+
+  .help-us-section ul {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  /* Why choose us section */
+
+  .wcu-section {
+    padding-inline: 6em;
+  }
+
+  .wcu-section ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Frequently asked question */
+
+  .faq-section {
+    padding-inline: 6em;
+  }
+
+  /* Last section */
+
+  .last-section {
+    padding-inline: 6em;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .last-text {
+    width: 70%;
+    text-align: start;
+  }
+}

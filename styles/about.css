@@ -1,0 +1,342 @@
+/* Color variables */
+
+:root {
+  --primary-color: #172b4d;
+  --second-color: #24272b;
+  --third-color: #c0c5cc;
+  --fourth-color: #f3f5f7;
+}
+
+/* Hero section */
+
+.hero-section {
+  padding-inline: 2em;
+  /* padding-block-start: 3em; */
+  background-image: url(/images/bg-images/BMW.webp);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 5em;
+  justify-content: center;
+  position: relative;
+  color: var(--fourth-color);
+}
+
+.hero-section::before {
+  position: absolute;
+  content: "";
+  inset: 0;
+  background: linear-gradient(to right, #172b4dd3, #172b4d73);
+}
+
+.hero-section h1 {
+  z-index: 5;
+  text-align: center;
+  border-bottom: 1px solid;
+  padding-block: 0.2em;
+}
+
+.go-down {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 5;
+}
+
+.go-down a {
+  background-color: var(--primary-color);
+  padding: 1em;
+  border-radius: 50%;
+  box-shadow: 2px 2px 25px var(--primary-color);
+  transition: transform 0.2s ease;
+  border: 2px solid var(--third-color);
+}
+
+.go-down a:hover {
+  transform: translate(-1px, -3px);
+}
+
+/* Who we are section */
+
+.wwa-section {
+  padding: 2em;
+  background-color: var(--fourth-color);
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.wwa-section h2 {
+  border-bottom: 1px solid;
+  padding-block: 0.2em;
+}
+
+.wwa-section p {
+  line-height: 1.3;
+  box-shadow: 2px 2px 10px var(--third-color);
+  padding: 1em 1em;
+  border-radius: 20px;
+}
+
+/* Mission and Vision section */
+
+.mission-section {
+  padding-inline: 2em;
+  padding-block: 4em;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5em;
+  text-align: center;
+  background-image: url(/images/bg-images/Chevrolet\ Camaro\ &\ Dodge\ Challenger\ &\ Shelby\ GT350.webp);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  color: var(--fourth-color);
+}
+
+.mission-section::before {
+  position: absolute;
+  content: "";
+  inset: 0;
+  background: linear-gradient(to right, #172b4dd3, #172b4d73);
+}
+
+.mission-section h2 {
+  padding-block: 0.2em;
+  border-bottom: 1px solid;
+  z-index: 5;
+  position: relative;
+}
+
+.mission-section p {
+  padding-block-start: 0.5em;
+  z-index: 5;
+  position: relative;
+}
+
+/* What we stand for section */
+
+.wws-section {
+  padding: 2em;
+}
+
+.wws-section h2 {
+  border-bottom: 1px solid;
+  padding-block: 0.2em;
+}
+
+.wws-list {
+  display: grid;
+  gap: 1em;
+  color: var(--fourth-color);
+  padding-block: 1em;
+}
+
+.wws-list li {
+  background-color: var(--primary-color);
+  padding: 1em;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  align-items: start;
+}
+
+.wws-list li div {
+  background-color: var(--third-color);
+  color: var(--primary-color);
+  display: inline-block;
+  padding: 0.5em;
+  font-size: 1.5rem;
+  border-radius: 10px;
+}
+
+/* Experience section */
+
+.experience-section {
+  padding: 2em;
+}
+
+.experience {
+  background-color: var(--fourth-color);
+  padding-block: 3em 1.5em;
+  padding-inline: 1em;
+  position: relative;
+  box-shadow: 1px 1px 10px var(--primary-color);
+}
+
+.experience h2 {
+  padding-block: 0.2em;
+  /* border-bottom: 1px solid; */
+}
+
+.experience p {
+  padding-block-start: 0.5em;
+}
+
+.experience-tag {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--second-color);
+  color: var(--fourth-color);
+  padding-block: 0.5em 1em;
+  padding-inline: 0.5em 1em;
+  border-bottom-right-radius: 50%;
+}
+
+/* Why choose us section */
+
+.wcu-section {
+  padding-inline: 2em;
+  padding-block: 1em 3em;
+  background-color: var(--fourth-color);
+  display: flex;
+  flex-direction: column;
+}
+
+.wcu-section h2 {
+  padding-block: 0.5em;
+  border-bottom: 1px solid;
+  /* border-top: 1px solid; */
+}
+
+.wcu-list {
+  display: grid;
+  gap: 2em;
+  padding-block-start: 1.5em;
+}
+
+.wcu-list li {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.wcu li {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.wcu h3 {
+  padding-block-end: 0.5em;
+}
+
+.wcu-icon {
+  height: 55px;
+  width: 55px;
+  font-size: 1.5rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--third-color);
+  color: var(--primary-color);
+}
+
+/* Media Queries */
+
+/* Tablet Screens */
+
+@media (min-width: 768px) {
+  /* Hero section */
+
+  .hero-section {
+    padding-inline: 4em;
+  }
+
+  /* Who we are section */
+
+  .wwa-section {
+    padding-inline: 4em;
+    padding-block: 4em;
+  }
+
+  /* Mission section */
+
+  .mission-section {
+    padding-inline: 4em;
+  }
+
+  /* What we stand for section */
+
+  .wws-section {
+    padding: 4em;
+  }
+
+  .wws-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Experience section */
+
+  .experience-section {
+    padding: 4em;
+  }
+
+  .experience {
+    padding-block: 3em;
+  }
+
+  /* Why choose us section */
+
+  .wcu-section {
+    padding: 4em;
+  }
+}
+
+/* Desktop screens */
+
+@media (min-width: 1200px) {
+  /* Hero section */
+
+  .hero-section {
+    padding-inline: 6em;
+  }
+
+  /* Who we are section */
+
+  .wwa-section {
+    padding-inline: 6em;
+  }
+
+  .wwa-section p {
+    width: 50%;
+  }
+
+  /* Mission section */
+
+  .mission-section {
+    padding-inline: 6em;
+  }
+
+  /* What we stand for section */
+
+  .wws-section {
+    padding-inline: 6em;
+  }
+
+  .wws-list {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  /* Experience section */
+
+  .experience-section {
+    padding: 6em;
+  }
+
+  /* Why choose us section */
+
+  .wcu-section {
+    padding-inline: 6em;
+  }
+
+  .wcu-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

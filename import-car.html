@@ -108,7 +108,20 @@
 
       <!-- Navigation Links -->
 
-      <nav aria-label="primary navigation" aria-hidden="true" hidden>
+      <nav
+        class="primary-nav"
+        aria-label="primary navigation"
+        aria-hidden="true"
+        hidden
+      >
+        <button
+          aria-controls="primary-navigation"
+          aria-expanded="true"
+          class="close"
+        >
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+
         <ul class="nav-list">
           <li>
             <a href="index.html">Home</a>
@@ -118,42 +131,36 @@
             <a href="cars.html">Cars</a>
           </li>
 
-          <li>
-            <button class="current-page">Services</button>
-            <i class="fa-solid fa-angle-down"></i>
+          <li class="services">
+            <a class="services-a current-page">
+              Services
+              <i class="fa-solid fa-angle-down dropdown-icon"></i>
+            </a>
 
-            <div class="services-dropdown" hidden>
-              <h2>What You Can Do With MikeOke</h2>
+            <div class="dropdown-div">
+              <div class="services-dropdown" hidden>
+                <h3>What You Can Do With MikeOke</h3>
 
-              <ul>
-                <li>
-                  <a href="cars.html">Buy Car</a>
+                <ul class="services-list">
+                  <li>
+                    <a href="cars.html">Buy Car</a>
+                  </li>
 
-                  <p>Find your ideal car from our available vehicles.</p>
-                </li>
+                  <li>
+                    <a href="import-car.html" class="current-service"
+                      >Import Car</a
+                    >
+                  </li>
 
-                <li>
-                  <a href="import-car.html" class="current-service"
-                    >Import Car</a
-                  >
+                  <li>
+                    <a href="source-car.html">Car Sourcing</a>
+                  </li>
 
-                  <p>
-                    Get your dream car imported to suit your needs and budget.
-                  </p>
-                </li>
-
-                <li>
-                  <a href="source-car.html">Car Sourcing</a>
-
-                  <p>Let us help you find your preferred vehicle.</p>
-                </li>
-
-                <li>
-                  <a href="sell-car.html">Sell Car</a>
-
-                  <p>Sell your car with ease through our team.</p>
-                </li>
-              </ul>
+                  <li>
+                    <a href="sell-car.html">Sell Car</a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </li>
 
@@ -166,11 +173,14 @@
           </li>
 
           <li>
-            <a href="insights.html">Insights</a>
+            <a href="faq.html">FAQ</a>
           </li>
         </ul>
 
-        <a href="https://wa.me/message/ZYFABMOAALL4M1" target="_blank"
+        <a
+          class="whatsapp"
+          href="https://wa.me/message/ZYFABMOAALL4M1"
+          target="_blank"
           ><i class="fa-brands fa-whatsapp"></i> Chat with us</a
         >
       </nav>
@@ -186,17 +196,19 @@
 
     <main>
       <section class="hero-section">
-        <p class="eyebrow">CAR IMPORTATION WITH MIKEOKE MOTORS</p>
+        <div class="hero-text">
+          <p class="eyebrow">CAR IMPORTATION WITH MIKEOKE MOTORS</p>
 
-        <h1>Import Your Dream Car With Confidence</h1>
+          <h1>Import Your Dream Car With Confidence</h1>
 
-        <p class="hero-text">
-          Looking to import a car into Nigeria? MikeOke Motors helps you explore
-          your options, source your preferred vehicle, and understand the steps
-          involved in bringing it into the country. From choosing the right car
-          to planning your import budget, we're here to help you make informed
-          decisions.
-        </p>
+          <p>
+            Looking to import a car into Nigeria? MikeOke Motors helps you
+            explore your options, source your preferred vehicle, and understand
+            the steps involved in bringing it into the country. From choosing
+            the right car to planning your import budget, we're here to help you
+            make informed decisions.
+          </p>
+        </div>
 
         <a href="#how">How It Works <i class="fa-solid fa-arrow-down"></i></a>
       </section>
@@ -270,219 +282,284 @@
       <section id="how" class="how-section">
         <p class="eyebrow">Your Import Journey, Step by Step</p>
 
-        <h2>How Car Importation Works</h2>
+        <h2>How Import Process Works</h2>
 
-        <ol>
-          <li>
-            <h3>Tell Us What You're Looking For</h3>
+        <ol class="how-list">
+          <li data-aos="fade-up" class="step-1">
+            <p class="numbering">01</p>
 
-            <p>
-              Share your preferred car, specifications, intended use, and
-              budget.
-            </p>
+            <div>
+              <h3>Tell Us What You're Looking For</h3>
+
+              <p>
+                Share your preferred car, specifications, intended use, and
+                budget.
+              </p>
+            </div>
           </li>
 
-          <li>
-            <h3>Explore Vehicle Options</h3>
+          <li data-aos="fade-up" class="step-2">
+            <p class="numbering">02</p>
 
-            <p>
-              Discuss suitable vehicles, availability, condition, and sourcing
-              options before choosing a car.
-            </p>
+            <div>
+              <h3>Explore Vehicle Options</h3>
+
+              <p>
+                Discuss suitable vehicles, availability, condition, and sourcing
+                options before choosing a car.
+              </p>
+            </div>
           </li>
 
-          <li>
-            <h3>Review the Total Estimated Cost</h3>
+          <li data-aos="fade-up" class="step-3">
+            <p class="numbering">03</p>
 
-            <p>
-              Consider the vehicle price, shipping, applicable import duties and
-              taxes, clearing, and other charges.
-            </p>
+            <div>
+              <h3>Review the Total Estimated Cost</h3>
+
+              <p>
+                Consider the vehicle price, shipping, applicable import duties
+                and taxes, clearing, and other charges.
+              </p>
+            </div>
           </li>
 
-          <li>
-            <h3>Confirm the Arrangements</h3>
+          <li data-aos="fade-up" class="step-4">
+            <p class="numbering">04</p>
 
-            <p>
-              Before proceeding, agreements on the vehicle, payment terms,
-              responsibilities, documentation, and shipping arrangements.
-            </p>
+            <div>
+              <h3>Confirm the Arrangements</h3>
+
+              <p>
+                Before proceeding, agreements on the vehicle, payment terms,
+                responsibilities, documentation, and shipping arrangements.
+              </p>
+            </div>
           </li>
 
-          <li>
-            <h3>Shipping, Clearing and Delivery</h3>
+          <li data-aos="fade-up" class="step-5">
+            <p class="numbering">05</p>
 
-            <p>
-              Track the agreed import process, complete the necessary
-              procedures, and arrange delivery according to the service
-              agreement.
-            </p>
+            <div>
+              <h3>Shipping, Clearing and Delivery</h3>
+
+              <p>
+                Track the agreed import process, complete the necessary
+                procedures, and arrange delivery according to the service
+                agreement.
+              </p>
+            </div>
           </li>
         </ol>
       </section>
 
       <section class="budget-section">
-        <p class="eyebrow">UNDERSTAND THE COST BEFORE YOU IMPORT</p>
+        <div class="budget-div">
+          <p class="eyebrow">UNDERSTAND THE COST BEFORE YOU IMPORT</p>
 
-        <h2>Budget And Important Considerations</h2>
+          <div class="budget-head">
+            <h2>Budget And Important Considerations</h2>
 
-        <p>
-          The cost of importing a car goes beyond its purchase price.Planning
-          ahead helps you understand the financial commitment involved.
-        </p>
-
-        <ul>
-          <li>
-            <h3>Vehicle purchase price</h3>
-
-            <p>
-              The actual amount of the selected car, influenced by its model,
-              year, condition, specifications, etc.
+            <p data-aos="fade-up">
+              The cost of importing a car goes beyond its purchase
+              price.Planning ahead helps you understand the financial commitment
+              involved.
             </p>
-          </li>
+          </div>
 
-          <li>
-            <h3>Shipping And Handling</h3>
+          <ul>
+            <li data-aos="fade-up">
+              <p>01</p>
 
-            <p>
-              Transport, shipping, and any applicable port or handling charges
-            </p>
-          </li>
+              <h3>Vehicle purchase price</h3>
 
-          <li>
-            <h3>Duties, Taxes and Clearing</h3>
+              <p>
+                The actual amount of the selected car, influenced by its model,
+                year, condition, specifications, etc.
+              </p>
+            </li>
 
-            <p>Applicable import charges and clearing costs</p>
-          </li>
+            <li data-aos="fade-up">
+              <p>02</p>
 
-          <li>
-            <h3>Other Relevant Expenses</h3>
+              <h3>Shipping And Handling</h3>
 
-            <p>
-              Depending on the arrangements, these may include inspection,
-              delivery, etc.
-            </p>
-          </li>
-        </ul>
+              <p>
+                Transport, shipping, and any applicable port or handling charges
+              </p>
+            </li>
+
+            <li data-aos="fade-up">
+              <p>03</p>
+
+              <h3>Duties, Taxes and Clearing</h3>
+
+              <p>Applicable import charges and clearing costs</p>
+            </li>
+
+            <li data-aos="fade-up">
+              <p>04</p>
+
+              <h3>Other Relevant Expenses</h3>
+
+              <p>
+                Depending on the arrangements, these may include inspection,
+                delivery, etc.
+              </p>
+            </li>
+          </ul>
+        </div>
       </section>
 
       <section class="wcu-section">
-        <h1>Why Choose Us?</h1>
+        <h2>Why Choose MikeOke?</h2>
 
         <ul>
-          <li>
-            <h3>Vehicle Sourcing</h3>
+          <li data-aos="fade-up">
+            <div class="wcu-icon">
+              <i class="fa-solid fa-car"></i>
+            </div>
 
-            <p>
-              We help you find your preferred car based on your needs,
-              specifications, and budget.
-            </p>
+            <div>
+              <h3>Vehicle Sourcing</h3>
+
+              <p>
+                We help you find your preferred car based on your needs,
+                specifications, and budget.
+              </p>
+            </div>
           </li>
 
-          <li>
-            <h3>Budget Planning</h3>
+          <li data-aos="fade-up">
+            <div class="wcu-icon">
+              <i class="fa-solid fa-wallet"></i>
+            </div>
 
-            <p>
-              We help you plan your budget by considering the vehicle price and
-              other expected import expenses
-            </p>
+            <div>
+              <h3>Budget Planning</h3>
+
+              <p>
+                We help you plan your budget by considering the vehicle price
+                and other expected import expenses
+              </p>
+            </div>
           </li>
 
-          <li>
-            <h3>Shipping and Import Coordination</h3>
+          <li data-aos="fade-up">
+            <div class="wcu-icon">
+              <i class="fa-solid fa-ship"></i>
+            </div>
 
-            <p>
-              We help coordinate the shipping and import process to bring your
-              chosen vehicle to Nigeria.
-            </p>
+            <div>
+              <h3>Shipping and Import Coordination</h3>
+
+              <p>
+                We help coordinate the shipping and import process to bring your
+                chosen vehicle to Nigeria.
+              </p>
+            </div>
           </li>
 
-          <li>
-            <h3>Documentation and Clearing</h3>
+          <li data-aos="fade-up">
+            <div class="wcu-icon">
+              <i class="fa-solid fa-file-circle-check"></i>
+            </div>
 
-            <p>
-              We assist with the necessary import documentation and customs
-              clearing procedures to help ensure a smooth process.
-            </p>
+            <div>
+              <h3>Documentation and Clearing</h3>
+
+              <p>
+                We assist with the necessary import documentation and customs
+                clearing procedures to help ensure a smooth process.
+              </p>
+            </div>
           </li>
         </ul>
       </section>
 
-      <section class="faq">
-        <h2>Frequently Asked Questions</h2>
+      <section class="faq-section">
+        <div data-aos="fade-up" class="faq-div">
+          <h2>Frequently Asked Questions</h2>
 
-        <ul>
-          <li
-            class="questions"
-            aria-expanded="false"
-            aria-controls="faq-answers"
-          >
-            <h3>
-              Can I import a specific car of my choice?
-              <i class="fa-solid fa-angle-down"></i>
-            </h3>
+          <ul>
+            <li
+              class="questions"
+              aria-expanded="false"
+              aria-controls="faq-answers"
+            >
+              <h3>
+                Can I import a specific car of my choice?
+                <i class="fa-solid fa-angle-down"></i>
+              </h3>
 
-            <p aria-label="faq-answers" aria-hidden="true" hidden>
-              Yes, you can tell us your preferred make, model, year, trim, and
-              other specifications. We'll discuss sourcing options and
-              availability
-            </p>
-          </li>
+              <p aria-label="faq-answers" aria-hidden="true" hidden>
+                Yes, you can tell us your preferred make, model, year, trim, and
+                other specifications. We'll discuss sourcing options and
+                availability
+              </p>
+            </li>
 
-          <li
-            class="questions"
-            aria-expanded="false"
-            aria-controls="faq-answers"
-          >
-            <h3>
-              How much does it cost to import a car to Nigeria?
-              <i class="fa-solid fa-angle-down"></i>
-            </h3>
+            <li
+              class="questions"
+              aria-expanded="false"
+              aria-controls="faq-answers"
+            >
+              <h3>
+                How much does it cost to import a car to Nigeria?
+                <i class="fa-solid fa-angle-down"></i>
+              </h3>
 
-            <p aria-label="faq-answers" aria-hidden="true" hidden>
-              The total depends on the vehicle price, shipping, applicable
-              duties and taxes, clearing, and other expenses.
-            </p>
-          </li>
+              <p aria-label="faq-answers" aria-hidden="true" hidden>
+                The total depends on the vehicle price, shipping, applicable
+                duties and taxes, clearing, and other expenses.
+              </p>
+            </li>
 
-          <li
-            class="questions"
-            aria-expanded="false"
-            aria-controls="faq-answers"
-          >
-            <h3>
-              How long does car importation takes?
-              <i class="fa-solid fa-angle-down"></i>
-            </h3>
+            <li
+              class="questions"
+              aria-expanded="false"
+              aria-controls="faq-answers"
+            >
+              <h3>
+                How long does car importation takes?
+                <i class="fa-solid fa-angle-down"></i>
+              </h3>
 
-            <p aria-label="faq-answers" aria-hidden="true" hidden>
-              The timeframe depends on vehicle location, sourcing, seller
-              readiness, shipping schedules, customs procedures, and delivery
-              arrangements. We cannot guarantee a fixed timeline without details
-              of the shipment.
-            </p>
-          </li>
-        </ul>
+              <p aria-label="faq-answers" aria-hidden="true" hidden>
+                The timeframe depends on vehicle location, sourcing, seller
+                readiness, shipping schedules, customs procedures, and delivery
+                arrangements. We cannot guarantee a fixed timeline without
+                details of the shipment.
+              </p>
+            </li>
+          </ul>
+        </div>
 
-        <a href="faq.html#importing">See all FAQs</a>
+        <a class="second-link" href="faq.html#importing">See all FAQs</a>
       </section>
 
-      <section class="last-section">
-        <h2>Your Next Car Could Just Be A Conversation Away</h2>
+      <section data-aos="fade-up" class="last-section">
+        <div class="last-text">
+          <h2>Your Next Car Could Just Be A Conversation Away</h2>
 
-        <p>
-          Have a particular car in mind? Tell MikeOke Motors what you're looking
-          for, share your budget, and let's discuss your import options.
-        </p>
+          <p>
+            Have a particular car in mind? Tell MikeOke Motors what you're
+            looking for, share your budget, and let's discuss your import
+            options.
+          </p>
+        </div>
 
-        <button
+        <div
           class="contact-options"
           aria-controls="contacts"
           aria-expanded="false"
         >
-          Start Your import Enquiry <i class="fa-solid fa-angle-down"></i>
+          <button class="contact-button">
+            Start Your import Enquiry
+            <i class="fa-solid fa-angle-down dropdown-icon"></i>
+          </button>
 
-          <ul aria-hidden="true" aria-label="contacts" hidden>
+          <ul class="contacts" aria-hidden="true" aria-label="contacts" hidden>
             <li>
               <a href="https://wa.me/message/ZYFABMOAALL4M1" target="_blank">
                 <i class="fa-brands fa-whatsapp"></i> Chat with us
@@ -505,21 +582,23 @@
               </a>
             </li>
           </ul>
-        </button>
+        </div>
       </section>
     </main>
 
     <footer>
       <div class="upper-footer">
-        <div>
-          <h2>
-            <img src="images/logo-icon.webp" alt="MikeOke" /> MikeOke motors
-          </h2>
+        <div class="footer-intro">
+          <img src="images/logo-icon.webp" alt="MikeOke" />
 
-          <p>
-            MikeOke Motors makes buying, selling, sourcing, and importing
-            quality vehicles simple, convenient, and reliable.
-          </p>
+          <div>
+            <h2>MikeOke motors</h2>
+
+            <p>
+              MikeOke Motors makes buying, selling, sourcing, and importing
+              quality vehicles simple, convenient, and reliable.
+            </p>
+          </div>
         </div>
 
         <div>
@@ -532,25 +611,27 @@
 
             <li><a href="about.html">About</a></li>
 
-            <li><a href="insight.html">Insights</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+
+            <li><a href="contact.html">Contact</a></li>
           </ul>
         </div>
 
-        <div>
+        <div class="footer-services">
           <h2>Our Services</h2>
 
           <ul>
-            <li>Buy A Car</li>
+            <li><a href="cars.html">Buy A Car</a></li>
 
-            <li>Sell A Car</li>
+            <li><a href="sell-car.html">Sell A Car</a></li>
 
-            <li>Car Sourcing</li>
+            <li><a href="source-car.html">Car Sourcing</a></li>
 
-            <li>Import A Car</li>
+            <li><a href="import-car.html">Import A Car</a></li>
           </ul>
         </div>
 
-        <div>
+        <div class="about">
           <div>
             <h2>Locate Us</h2>
 

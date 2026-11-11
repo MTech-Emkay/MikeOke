@@ -1,0 +1,370 @@
+/* Color variables */
+
+:root {
+  --primary-color: #172b4d;
+  --second-color: #24272b;
+  --third-color: #c0c5cc;
+  --fourth-color: #f3f5f7;
+}
+
+/* Hero section */
+
+.hero-section {
+  padding-inline: 2em;
+  /* padding-block-start: 3em; */
+  background-image: url(/images/bg-images/Chevrolet\ Camaro\ &\ Dodge\ Challenger\ &\ Shelby\ GT350.webp);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 5em;
+  justify-content: center;
+  position: relative;
+  color: var(--fourth-color);
+}
+
+.hero-section::before {
+  position: absolute;
+  content: "";
+  inset: 0;
+  background: linear-gradient(to right, #172b4dd3, #172b4d73);
+}
+
+.hero-section h1 {
+  z-index: 5;
+  text-align: center;
+  border-bottom: 1px solid;
+  padding-block: 0.2em;
+}
+
+.go-down {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 5;
+}
+
+.go-down a {
+  background-color: var(--primary-color);
+  padding: 1em;
+  border-radius: 50%;
+  box-shadow: 2px 2px 25px var(--primary-color);
+  transition: transform 0.2s ease;
+  border: 2px solid var(--third-color);
+}
+
+.go-down a:hover {
+  transform: translate(-1px, -3px);
+}
+
+/* Contact information section */
+
+.information-section {
+  padding: 2em;
+  background-color: var(--fourth-color);
+  display: grid;
+  gap: 4em;
+}
+
+.information-section h2 {
+  padding-block-end: 1em;
+}
+
+.information-section h3 {
+  padding-block-end: 1.5em;
+}
+
+.contact-info ul {
+  display: grid;
+  gap: 1.5em;
+}
+
+.contact-info li {
+  box-shadow: 2px 2px 10px var(--third-color);
+  padding: 1em 1em;
+  border-radius: 20px;
+  transition: 0.2s;
+}
+
+.contact-info li:hover {
+  /* transform: translateY(-5px); */
+  transform: translateY(-7px);
+  box-shadow: 5px 5px 10px var(--third-color);
+}
+
+.contact-info li:hover span {
+  background-color: var(--primary-color);
+  color: var(--third-color);
+}
+
+.contact-info a,
+.contact-info p {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  align-items: start;
+  font-weight: 600;
+}
+
+.contact-info span,
+.follow-list a {
+  background-color: var(--third-color);
+  padding: 0.5em;
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  border-radius: 50%;
+  transition: 0.2s;
+}
+
+.follow-list {
+  display: flex;
+  gap: 1em;
+}
+
+.follow-list a:hover {
+  background-color: var(--primary-color);
+  color: var(--third-color);
+}
+
+/* How can we assist section */
+
+.assist-section {
+  padding: 2em;
+}
+
+.assist-section h2 {
+  padding-block-end: 0.3em;
+}
+
+.assist-section h3 {
+  padding-block-end: 0.7em;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.service-cards {
+  padding-block-start: 1.5em;
+  display: grid;
+  gap: 2em;
+}
+
+.service-cards a {
+  display: block;
+  width: 100%;
+}
+
+.service-card {
+  box-shadow: 2px 2px 10px var(--third-color);
+  padding: 1.5em 1em;
+  border-radius: 20px;
+  transition: 0.2s;
+}
+
+.service-card:hover {
+  transform: translateY(-7px);
+  box-shadow: 5px 5px 10px var(--third-color);
+}
+
+/* Business hours section */
+
+.business-hours-section {
+  padding: 2em;
+}
+
+.business-hours-section h2 {
+  padding-block-end: 0.3em;
+}
+
+.business-hours-section h3 {
+  padding-block-end: 0.5em;
+}
+
+.business-hours-div {
+  padding-block-start: 2em;
+  display: grid;
+  gap: 2em;
+}
+
+.business-hours-div div {
+  background-color: var(--fourth-color);
+  padding: 2em 1em;
+  border-radius: 15px;
+  box-shadow: 5px 5px 10px var(--third-color);
+}
+
+/* Locate us section */
+
+.location-section {
+  padding-block-start: 4em;
+  padding-inline: 2em;
+}
+
+.location-section h2 {
+  padding-block-end: 1em;
+}
+
+.location iframe {
+  width: 100%;
+}
+
+/* Last section */
+
+.last-section {
+  padding-inline: 2em;
+  padding-block: 3.5em;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  background-color: var(--fourth-color);
+  text-align: center;
+}
+
+.last-section h2 {
+  padding-block-end: 0.5em;
+}
+
+.last-links {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  /* max-width: 100%; */
+  margin-inline: auto;
+  gap: 1rem;
+}
+
+.last-links a {
+  background-color: var(--second-color);
+  padding: 1em 2em;
+  transition: 0.2s;
+  border: 2px solid var(--second-color);
+  border-radius: 10px;
+  transition: 0.2s;
+}
+
+.last-links :first-child {
+  color: white;
+}
+
+.last-links :first-child:hover {
+  background: none;
+  color: black;
+}
+
+.last-links :last-child {
+  background: none;
+}
+
+.last-links :last-child:hover {
+  background-color: var(--second-color);
+  color: white;
+}
+
+/* Media Queries */
+
+/* Tablet Screens */
+
+@media (min-width: 768px) {
+  /* Hero section */
+
+  .hero-section {
+    padding-inline: 4em;
+  }
+
+  /* Contact information section */
+  .information-section {
+    padding-inline: 4em;
+  }
+
+  .contact-info ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* How can we assist section */
+
+  .assist-section {
+    padding-inline: 4em;
+  }
+
+  .service-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Business hours section */
+
+  .business-hours-section {
+    padding-inline: 4em;
+  }
+
+  .business-hours-div {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Locate us section */
+
+  .location-section {
+    padding-inline: 4em;
+  }
+
+  /* Last section */
+
+  .last-section {
+    padding-inline: 4em;
+  }
+}
+
+/* Desktop screens */
+
+@media (min-width: 1200px) {
+  /* Hero section */
+
+  .hero-section {
+    padding-inline: 6em;
+  }
+
+  /* Contact Information section */
+
+  .information-section {
+    padding-inline: 6em;
+  }
+
+  .contact-info ul {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  /* How can we assist section */
+
+  .assist-section {
+    padding-inline: 6em;
+  }
+
+  .service-cards {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  /* Business hours section */
+
+  .business-hours-section {
+    padding-inline: 6em;
+  }
+
+  /* Last section */
+
+  .last-section {
+    padding-inline: 6em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    text-align: start;
+  }
+
+  .last-text {
+    width: 60%;
+  }
+
+  .last-links {
+    flex-direction: row;
+  }
+}

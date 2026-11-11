@@ -80,6 +80,10 @@
     />
     <link rel="manifest" href="/site.webmanifest" />
 
+    <!-- Scroll Animation -->
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
     <!-- Stylesheet/Css -->
 
     <link rel="stylesheet" href="styles/general.css" />
@@ -89,20 +93,35 @@
   <body>
     <!-- Back to top button/link -->
 
-    <a href="#index">Back to top <i class="fa-solid fa-arrow-up"></i></a>
+    <a class="back-to-top" href="#" hidden
+      ><i class="fa-solid fa-arrow-up"></i
+    ></a>
 
     <!-- Header -->
 
     <header>
       <!-- Company logo -->
 
-      <a href="index.html"
-        ><img src="images/logo-icon .webp" alt="MikeOke" /> MikeOke motors</a
-      >
+      <a class="header-logo" href="index.html"
+        ><img src="images/logo.webp" alt="MikeOke"
+      /></a>
 
       <!-- Navigation Links -->
 
-      <nav aria-label="primary navigation" aria-hidden="true" hidden>
+      <nav
+        class="primary-nav"
+        aria-label="primary navigation"
+        aria-hidden="true"
+        hidden
+      >
+        <button
+          aria-controls="primary-navigation"
+          aria-expanded="true"
+          class="close"
+        >
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+
         <ul class="nav-list">
           <li>
             <a href="index.html">Home</a>
@@ -112,40 +131,34 @@
             <a href="cars.html">Cars</a>
           </li>
 
-          <li>
-            <button class="current-page">Services</button>
-            <i class="fa-solid fa-angle-down"></i>
+          <li class="services">
+            <a class="services-a current-page">
+              Services
+              <i class="fa-solid fa-angle-down dropdown-icon"></i>
+            </a>
 
-            <div class="services-dropdown" hidden>
-              <h2>What You Can Do With MikeOke</h2>
+            <div class="dropdown-div">
+              <div class="services-dropdown" hidden>
+                <h3>What You Can Do With MikeOke</h3>
 
-              <ul>
-                <li>
-                  <a href="cars.html">Buy Car</a>
+                <ul class="services-list">
+                  <li>
+                    <a href="cars.html">Buy Car</a>
+                  </li>
 
-                  <p>Find your ideal car from our available vehicles.</p>
-                </li>
+                  <li>
+                    <a href="import-car.html">Import Car</a>
+                  </li>
 
-                <li>
-                  <a href="import-car.html">Import Car</a>
+                  <li>
+                    <a href="source-car.html">Car Sourcing</a>
+                  </li>
 
-                  <p>
-                    Get your dream car imported to suit your needs and budget.
-                  </p>
-                </li>
-
-                <li>
-                  <a href="source-car.html">Car Sourcing</a>
-
-                  <p>Let us help you find your preferred vehicle.</p>
-                </li>
-
-                <li>
-                  <a href="sell-car.html" class="current-service">Sell Car</a>
-
-                  <p>Sell your car with ease through our team.</p>
-                </li>
-              </ul>
+                  <li>
+                    <a class="current-service" href="sell-car.html">Sell Car</a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </li>
 
@@ -158,9 +171,16 @@
           </li>
 
           <li>
-            <a href="insights.html">Insights</a>
+            <a href="faq.html">FAQ</a>
           </li>
         </ul>
+
+        <a
+          class="whatsapp"
+          href="https://wa.me/message/ZYFABMOAALL4M1"
+          target="_blank"
+          ><i class="fa-brands fa-whatsapp"></i> Chat with us</a
+        >
       </nav>
 
       <button
@@ -174,10 +194,10 @@
 
     <main>
       <section class="hero-section">
-        <p class="eyebrow">SELL YOUR CAR WITH MIKEOKE MOTORS</p>
+        <div class="hero-text">
+          <p class="eyebrow">SELL YOUR CAR WITH MIKEOKE MOTORS</p>
 
-        <div>
-          <h1>Looking To Sell Your Car?</h1>
+          <h1>Looking To Sell A Car?</h1>
 
           <p>
             Looking to sell your car without the stress of finding the right
@@ -185,184 +205,220 @@
             step with confidence. Get in touch with us to discuss your vehicle
             and explore the way forward.
           </p>
-
-          <a href="#sell-opt"
-            >How It Works <i class="fa-solid fa-arrow-down"></i
-          ></a>
         </div>
+
+        <a href="#how">How It Works <i class="fa-solid fa-arrow-down"></i></a>
       </section>
 
-      <section id="sell-opt" class="sell-opt-section">
-        <h1>Selling Options</h1>
+      <section class="sell-opt-section">
+        <h2>Selling Options</h2>
 
         <div class="sell-options">
-          <div class="sell-option">
+          <div data-aos="fade-up" class="sell-option">
             <img src="images/car-buying.webp" alt="Sell" />
 
-            <div>
-              <h2>Sell Your Car Directly To Us</h2>
+            <div class="opt-details">
+              <h3>Sell Your Car Directly To Us</h3>
 
               <p>
                 If your vehicle meets our purchasing requrements, we can asess
                 it and discuss a possible direct purchase by the company
               </p>
+
+              <div
+                aria-controls="contacts"
+                aria-expanded="false"
+                class="contact-options"
+              >
+                <button class="contact-button">
+                  Make Enquiries
+                  <i class="fa-solid fa-angle-down dropdown-icon"></i>
+                </button>
+
+                <ul
+                  class="contacts"
+                  aria-hidden="true"
+                  aria-label="contacts"
+                  hidden
+                >
+                  <li>
+                    <a
+                      href="https://wa.me/message/ZYFABMOAALL4M1"
+                      target="_blank"
+                    >
+                      <i class="fa-brands fa-whatsapp"></i> Chat with us
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="mailto:mikeoke52@gmail.com">
+                      <i class="fa-solid fa-envelope"></i>
+
+                      Send an email
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="tel:+2349050459399">
+                      <i class="fa-solid fa-phone"></i>
+
+                      Call us
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </div>
-
-            <button
-              class="contact-options"
-              aria-controls="contacts"
-              aria-expanded="false"
-            >
-              Enquire about a direct sale <i class="fa-solid fa-angle-down"></i>
-
-              <ul aria-hidden="true" aria-label="contacts" hidden>
-                <li>
-                  <a
-                    href="https://wa.me/message/ZYFABMOAALL4M1"
-                    target="_blank"
-                  >
-                    <i class="fa-brands fa-whatsapp"></i> Chat with us
-                  </a>
-                </li>
-
-                <li>
-                  <a href="mailto:mikeoke52@gmail.com">
-                    <i class="fa-solid fa-envelope"></i>
-
-                    Send an email
-                  </a>
-                </li>
-
-                <li>
-                  <a href="tel:+2349050459399">
-                    <i class="fa-solid fa-phone"></i>
-
-                    Call us
-                  </a>
-                </li>
-              </ul>
-            </button>
           </div>
 
-          <div class="sell-option">
+          <div data-aos="fade-up" class="sell-option">
             <img src="images/car-selling.webp" alt="" />
 
-            <div>
-              <h2>We Help You Find A Buyer</h2>
+            <div class="opt-details">
+              <h3>We Help You Find A Buyer</h3>
 
               <p>
                 If your vehicle does not meets our purchasing requrements or you
                 prefer to sell to another buyer, we can asess it and help you
                 find a suitable buyer
               </p>
+
+              <div
+                aria-controls="contacts"
+                aria-expanded="false"
+                class="contact-options"
+              >
+                <button class="contact-button">
+                  Make Enquiries
+                  <i class="fa-solid fa-angle-down dropdown-icon"></i>
+                </button>
+
+                <ul
+                  class="contacts"
+                  aria-hidden="true"
+                  aria-label="contacts"
+                  hidden
+                >
+                  <li>
+                    <a
+                      href="https://wa.me/message/ZYFABMOAALL4M1"
+                      target="_blank"
+                    >
+                      <i class="fa-brands fa-whatsapp"></i> Chat with us
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="mailto:mikeoke52@gmail.com">
+                      <i class="fa-solid fa-envelope"></i>
+
+                      Send an email
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="tel:+2349050459399">
+                      <i class="fa-solid fa-phone"></i>
+
+                      Call us
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </div>
-
-            <button
-              class="contact-options"
-              aria-controls="contacts"
-              aria-expanded="false"
-            >
-              Buyer-Finding Assistance <i class="fa-solid fa-angle-down"></i>
-
-              <ul aria-hidden="true" aria-label="contacts" hidden>
-                <li>
-                  <a
-                    href="https://wa.me/message/ZYFABMOAALL4M1"
-                    target="_blank"
-                  >
-                    <i class="fa-brands fa-whatsapp"></i> Chat with us
-                  </a>
-                </li>
-
-                <li>
-                  <a href="mailto:mikeoke52@gmail.com">
-                    <i class="fa-solid fa-envelope"></i>
-
-                    Send an email
-                  </a>
-                </li>
-
-                <li>
-                  <a href="tel:+2349050459399">
-                    <i class="fa-solid fa-phone"></i>
-
-                    Call us
-                  </a>
-                </li>
-              </ul>
-            </button>
           </div>
         </div>
       </section>
 
-      <section class="how-section">
-        <h2>How It Works</h2>
+      <section id="how" class="how-section">
+        <h2>How Selling Process Works</h2>
 
-        <p>Sell Your Car In A Few Simple Steps</p>
+        <ol class="how-list">
+          <li data-aos="fade-up">
+            <p class="numbering">01</p>
 
-        <ol>
-          <li>
-            <h3>Contact Us</h3>
+            <div>
+              <h3>Contact Us</h3>
 
-            <p>
-              Contact MikeOke Motors by whatsapp, phone or email and let us know
-              that you want to sell your car
-            </p>
+              <p>
+                Contact MikeOke Motors by whatsapp, phone or email and let us
+                know that you want to sell your car
+              </p>
+            </div>
           </li>
 
-          <li>
-            <h3>Share Vehicle Details</h3>
+          <li data-aos="fade-up">
+            <p class="numbering">02</p>
 
-            <p>
-              Provide the details about your car like the make, model, year,
-              condition, location, asking price(if you have one) and
-              photographs.
-            </p>
+            <div>
+              <h3>Share Vehicle Details</h3>
+
+              <p>
+                Provide the details about your car like the make, model, year,
+                condition, location, asking price(if you have one) and
+                photographs.
+              </p>
+            </div>
           </li>
 
-          <li>
-            <h3>Discuss Selling Options</h3>
+          <li data-aos="fade-up">
+            <p class="numbering">03</p>
 
-            <p>
-              We'll discuss whether a direct purchase may be suitable or whether
-              we can assist you in finding a buyer.
-            </p>
+            <div>
+              <h3>Discuss Selling Options</h3>
+
+              <p>
+                We'll discuss whether a direct purchase may be suitable or
+                whether we can assist you in finding a buyer.
+              </p>
+            </div>
           </li>
 
-          <li>
-            <h3>Discuss Inspection And Pricing</h3>
+          <li data-aos="fade-up">
+            <p class="numbering">04</p>
 
-            <p>
-              We'll discuss the vehicle with you and explain any inspection and
-              evaluation steps needed before an offer can be agreed.
-            </p>
+            <div>
+              <h3>Discuss Inspection And Pricing</h3>
+
+              <p>
+                We'll discuss the vehicle with you and explain any inspection
+                and evaluation steps needed before an offer can be agreed.
+              </p>
+            </div>
           </li>
 
-          <li>
-            <h3>Agree On Next Steps</h3>
+          <li data-aos="fade-up">
+            <p class="numbering">05</p>
 
-            <p>
-              After agreement to inspection terms, pricing, payment
-              arrangements, and necessary documentations.Next steps can be
-              discussed and completed.
-            </p>
+            <div>
+              <h3>Agree On Next Steps</h3>
+
+              <p>
+                After agreement to inspection terms, pricing, payment
+                arrangements, and necessary documentations.Next steps can be
+                discussed and completed.
+              </p>
+            </div>
           </li>
         </ol>
       </section>
 
-      <section class="informations">
+      <section class="information-section">
         <p class="eyebrow">Tell us about your car</p>
 
         <h2>Informations To Prepare</h2>
 
-        <ul>
-          <li>
+        <ul class="information-list">
+          <li data-aos="fade-up">
+            <p>01</p>
+
             <h3>Vehicle Details</h3>
 
             <p>Make, model, year, transmission, mileage, and fuel type.</p>
           </li>
 
-          <li>
+          <li data-aos="fade-up">
+            <p>02</p>
+
             <h3>Vehicle Condition</h3>
 
             <p>
@@ -371,19 +427,25 @@
             </p>
           </li>
 
-          <li>
+          <li data-aos="fade-up">
+            <p>03</p>
+
             <h3>Price Expectations</h3>
 
             <p>Your asking price or your preferred selling range.</p>
           </li>
 
-          <li>
+          <li data-aos="fade-up">
+            <p>04</p>
+
             <h3>Vehicle Location</h3>
 
             <p>The city or area where the car is currently located.</p>
           </li>
 
-          <li>
+          <li data-aos="fade-up">
+            <p>05</p>
+
             <h3>Photographs</h3>
 
             <p>
@@ -392,7 +454,9 @@
             </p>
           </li>
 
-          <li>
+          <li data-aos="fade-up">
+            <p>06</p>
+
             <h3>Vehicle Documentation</h3>
 
             <p>
@@ -404,82 +468,89 @@
       </section>
 
       <section class="faq-section">
-        <h2>Frequently Asked Questions</h2>
+        <div data-aos="fade-up" class="faq-div">
+          <h2>Frequently Asked Questions</h2>
 
-        <ul>
-          <li
-            class="questions"
-            aria-expanded="false"
-            aria-controls="faq-answers"
-          >
-            <h3>
-              What types of cars can I sell through MikeOke Motors?
-              <i class="fa-solid fa-angle-down"></i>
-            </h3>
+          <ul>
+            <li
+              class="questions"
+              aria-expanded="false"
+              aria-controls="faq-answers"
+            >
+              <h3>
+                What types of cars can I sell through MikeOke Motors?
+                <i class="fa-solid fa-angle-down"></i>
+              </h3>
 
-            <p aria-label="faq-answers" aria-hidden="true" hidden>
-              Contact us with your vehicle's make, model, year, condition, and
-              location. We'll discuss whether we can assist with your particular
-              vehicle.
-            </p>
-          </li>
+              <p aria-label="faq-answers" aria-hidden="true" hidden>
+                Contact us with your vehicle's make, model, year, condition, and
+                location. We'll discuss whether we can assist with your
+                particular vehicle.
+              </p>
+            </li>
 
-          <li
-            class="questions"
-            aria-expanded="false"
-            aria-controls="faq-answers"
-          >
-            <h3>
-              Will MikeOke Motors buy my car directly?
-              <i class="fa-solid fa-angle-down"></i>
-            </h3>
+            <li
+              class="questions"
+              aria-expanded="false"
+              aria-controls="faq-answers"
+            >
+              <h3>
+                Will MikeOke Motors buy my car directly?
+                <i class="fa-solid fa-angle-down"></i>
+              </h3>
 
-            <p aria-label="faq-answers" aria-hidden="true" hidden>
-              We may consider your vehicle for direct purchase depending on its
-              make, model, condition and our overall purchasing requrements.
-              Otherwise, we just help you find a suitable buyer
-            </p>
-          </li>
+              <p aria-label="faq-answers" aria-hidden="true" hidden>
+                We may consider your vehicle for direct purchase depending on
+                its make, model, condition and our overall purchasing
+                requrements. Otherwise, we just help you find a suitable buyer
+              </p>
+            </li>
 
-          <li
-            class="questions"
-            aria-expanded="false"
-            aria-controls="faq-answers"
-          >
-            <h3>
-              How is the selling price determined?
-              <i class="fa-solid fa-angle-down"></i>
-            </h3>
+            <li
+              class="questions"
+              aria-expanded="false"
+              aria-controls="faq-answers"
+            >
+              <h3>
+                How is the selling price determined?
+                <i class="fa-solid fa-angle-down"></i>
+              </h3>
 
-            <p aria-label="faq-answers" aria-hidden="true" hidden>
-              You can communicate your asking price and expectations.However the
-              price can depend on factors such as the vehicle's make, model,
-              year, mileage, condition, service history, and current market
-              demand. An appropriate assessment may be needed before an offer is
-              agreed.
-            </p>
-          </li>
-        </ul>
+              <p aria-label="faq-answers" aria-hidden="true" hidden>
+                You can communicate your asking price and expectations.However
+                the price can depend on factors such as the vehicle's make,
+                model, year, mileage, condition, service history, and current
+                market demand. An appropriate assessment may be needed before an
+                offer is agreed.
+              </p>
+            </li>
+          </ul>
+        </div>
 
-        <a href="faq.html#selling">See all FAQs</a>
+        <a class="second-link" href="faq.html#selling">See all FAQs</a>
       </section>
 
-      <section class="last-section">
-        <h2>Your Next Sale Starts Here</h2>
+      <section data-aos="fade-up" class="last-section">
+        <div class="last-text">
+          <h2>Your Next Sale Starts Here</h2>
 
-        <p>
-          Have a car you'd like to sell? Get in touch with MikeOke Motors, tell
-          us about your vehicle, and let's discuss the next steps
-        </p>
+          <p>
+            Have a car you'd like to sell? Get in touch with MikeOke Motors,
+            tell us about your vehicle, and let's discuss the next steps
+          </p>
+        </div>
 
-        <button
+        <div
           class="contact-options"
           aria-controls="contacts"
           aria-expanded="false"
         >
-          Make Enquiries <i class="fa-solid fa-angle-down"></i>
+          <button class="contact-button">
+            Start Selling Process
+            <i class="fa-solid fa-angle-down dropdown-icon"></i>
+          </button>
 
-          <ul aria-hidden="true" aria-label="contacts" hidden>
+          <ul class="contacts" aria-hidden="true" aria-label="contacts" hidden>
             <li>
               <a href="https://wa.me/message/ZYFABMOAALL4M1" target="_blank">
                 <i class="fa-brands fa-whatsapp"></i> Chat with us
@@ -502,21 +573,23 @@
               </a>
             </li>
           </ul>
-        </button>
+        </div>
       </section>
     </main>
 
     <footer>
       <div class="upper-footer">
-        <div>
-          <h2>
-            <img src="images/logo-icon.webp" alt="MikeOke" /> MikeOke motors
-          </h2>
+        <div class="footer-intro">
+          <img src="images/logo-icon.webp" alt="MikeOke" />
 
-          <p>
-            MikeOke Motors makes buying, selling, sourcing, and importing
-            quality vehicles simple, convenient, and reliable.
-          </p>
+          <div>
+            <h2>MikeOke motors</h2>
+
+            <p>
+              MikeOke Motors makes buying, selling, sourcing, and importing
+              quality vehicles simple, convenient, and reliable.
+            </p>
+          </div>
         </div>
 
         <div>
@@ -529,25 +602,27 @@
 
             <li><a href="about.html">About</a></li>
 
-            <li><a href="insight.html">Insights</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+
+            <li><a href="contact.html">Contact</a></li>
           </ul>
         </div>
 
-        <div>
+        <div class="footer-services">
           <h2>Our Services</h2>
 
           <ul>
-            <li>Buy A Car</li>
+            <li><a href="cars.html">Buy A Car</a></li>
 
-            <li>Sell A Car</li>
+            <li><a href="sell-car.html">Sell A Car</a></li>
 
-            <li>Car Sourcing</li>
+            <li><a href="source-car.html">Car Sourcing</a></li>
 
-            <li>Import A Car</li>
+            <li><a href="import-car.html">Import A Car</a></li>
           </ul>
         </div>
 
-        <div>
+        <div class="about">
           <div>
             <h2>Locate Us</h2>
 
@@ -599,4 +674,10 @@
       </div>
     </footer>
   </body>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <script>
+    AOS.init();
+  </script>
 </html>
