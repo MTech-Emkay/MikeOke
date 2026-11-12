@@ -132,13 +132,22 @@
           </li>
 
           <li class="services">
-            <a class="services-a current-page">
+            <a
+              aria-expanded="false"
+              aria-controls="services-dropdown"
+              class="services-a current-page"
+            >
               Services
               <i class="fa-solid fa-angle-down dropdown-icon"></i>
             </a>
 
             <div class="dropdown-div">
-              <div class="services-dropdown" hidden>
+              <div
+                aria-label="services-dropdown"
+                aria-hidden="true"
+                class="services-dropdown"
+                hidden
+              >
                 <h3>What You Can Do With MikeOke</h3>
 
                 <ul class="services-list">
@@ -472,51 +481,66 @@
           <h2>Frequently Asked Questions</h2>
 
           <ul>
-            <li
-              class="questions"
-              aria-expanded="false"
-              aria-controls="faq-answers"
-            >
-              <h3>
+            <li class="question-lists">
+              <h3
+                class="questions"
+                aria-expanded="false"
+                aria-controls="faq-answers"
+              >
                 What types of cars can I sell through MikeOke Motors?
                 <i class="fa-solid fa-angle-down"></i>
               </h3>
 
-              <p aria-label="faq-answers" aria-hidden="true" hidden>
+              <p
+                class="faq-answers"
+                aria-label="faq-answers"
+                aria-hidden="true"
+                hidden
+              >
                 Contact us with your vehicle's make, model, year, condition, and
                 location. We'll discuss whether we can assist with your
                 particular vehicle.
               </p>
             </li>
 
-            <li
-              class="questions"
-              aria-expanded="false"
-              aria-controls="faq-answers"
-            >
-              <h3>
+            <li class="question-lists">
+              <h3
+                class="questions"
+                aria-expanded="false"
+                aria-controls="faq-answers"
+              >
                 Will MikeOke Motors buy my car directly?
                 <i class="fa-solid fa-angle-down"></i>
               </h3>
 
-              <p aria-label="faq-answers" aria-hidden="true" hidden>
+              <p
+                class="faq-answers"
+                aria-label="faq-answers"
+                aria-hidden="true"
+                hidden
+              >
                 We may consider your vehicle for direct purchase depending on
                 its make, model, condition and our overall purchasing
                 requrements. Otherwise, we just help you find a suitable buyer
               </p>
             </li>
 
-            <li
-              class="questions"
-              aria-expanded="false"
-              aria-controls="faq-answers"
-            >
-              <h3>
+            <li class="question-lists">
+              <h3
+                class="questions"
+                aria-expanded="false"
+                aria-controls="faq-answers"
+              >
                 How is the selling price determined?
                 <i class="fa-solid fa-angle-down"></i>
               </h3>
 
-              <p aria-label="faq-answers" aria-hidden="true" hidden>
+              <p
+                class="faq-answers"
+                aria-label="faq-answers"
+                aria-hidden="true"
+                hidden
+              >
                 You can communicate your asking price and expectations.However
                 the price can depend on factors such as the vehicle's make,
                 model, year, mileage, condition, service history, and current
@@ -674,6 +698,8 @@
       </div>
     </footer>
   </body>
+
+  <script src="script/main.js"></script>
 
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 

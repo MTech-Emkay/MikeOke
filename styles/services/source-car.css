@@ -355,6 +355,10 @@
     width: 70%;
   }
 
+  .hero-links {
+    flex-direction: row;
+  }
+
   /* Source help section */
 
   .source-help-section {

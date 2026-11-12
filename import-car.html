@@ -132,13 +132,22 @@
           </li>
 
           <li class="services">
-            <a class="services-a current-page">
+            <a
+              aria-expanded="false"
+              aria-controls="services-dropdown"
+              class="services-a current-page"
+            >
               Services
               <i class="fa-solid fa-angle-down dropdown-icon"></i>
             </a>
 
             <div class="dropdown-div">
-              <div class="services-dropdown" hidden>
+              <div
+                aria-label="services-dropdown"
+                aria-hidden="true"
+                class="services-dropdown"
+                hidden
+              >
                 <h3>What You Can Do With MikeOke</h3>
 
                 <ul class="services-list">
@@ -482,50 +491,65 @@
           <h2>Frequently Asked Questions</h2>
 
           <ul>
-            <li
-              class="questions"
-              aria-expanded="false"
-              aria-controls="faq-answers"
-            >
-              <h3>
+            <li class="question-lists">
+              <h3
+                class="questions"
+                aria-expanded="false"
+                aria-controls="faq-answers"
+              >
                 Can I import a specific car of my choice?
                 <i class="fa-solid fa-angle-down"></i>
               </h3>
 
-              <p aria-label="faq-answers" aria-hidden="true" hidden>
+              <p
+                class="faq-answers"
+                aria-label="faq-answers"
+                aria-hidden="true"
+                hidden
+              >
                 Yes, you can tell us your preferred make, model, year, trim, and
                 other specifications. We'll discuss sourcing options and
                 availability
               </p>
             </li>
 
-            <li
-              class="questions"
-              aria-expanded="false"
-              aria-controls="faq-answers"
-            >
-              <h3>
+            <li class="question-lists">
+              <h3
+                class="questions"
+                aria-expanded="false"
+                aria-controls="faq-answers"
+              >
                 How much does it cost to import a car to Nigeria?
                 <i class="fa-solid fa-angle-down"></i>
               </h3>
 
-              <p aria-label="faq-answers" aria-hidden="true" hidden>
+              <p
+                class="faq-answers"
+                aria-label="faq-answers"
+                aria-hidden="true"
+                hidden
+              >
                 The total depends on the vehicle price, shipping, applicable
                 duties and taxes, clearing, and other expenses.
               </p>
             </li>
 
-            <li
-              class="questions"
-              aria-expanded="false"
-              aria-controls="faq-answers"
-            >
-              <h3>
+            <li class="question-lists">
+              <h3
+                class="questions"
+                aria-expanded="false"
+                aria-controls="faq-answers"
+              >
                 How long does car importation takes?
                 <i class="fa-solid fa-angle-down"></i>
               </h3>
 
-              <p aria-label="faq-answers" aria-hidden="true" hidden>
+              <p
+                class="faq-answers"
+                aria-label="faq-answers"
+                aria-hidden="true"
+                hidden
+              >
                 The timeframe depends on vehicle location, sourcing, seller
                 readiness, shipping schedules, customs procedures, and delivery
                 arrangements. We cannot guarantee a fixed timeline without
@@ -683,6 +707,8 @@
       </div>
     </footer>
   </body>
+
+  <script src="script/main.js"></script>
 
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
