@@ -61,7 +61,7 @@
 /* Who we are section */
 
 .wwa-section {
-  padding: 2em;
+  padding: 3.5em 2em;
   background-color: var(--fourth-color);
   display: flex;
   flex-direction: column;
@@ -83,8 +83,7 @@
 /* Mission and Vision section */
 
 .mission-section {
-  padding-inline: 2em;
-  padding-block: 4em;
+  padding: 4em 2em;
   display: flex;
   flex-direction: column;
   gap: 2.5em;
@@ -119,7 +118,7 @@
 /* What we stand for section */
 
 .wws-section {
-  padding: 2em;
+  padding: 3.5em 2em;
 }
 
 .wws-section h2 {
@@ -131,7 +130,7 @@
   display: grid;
   gap: 1em;
   color: var(--fourth-color);
-  padding-block: 1em;
+  /* padding-block: 1em; */
 }
 
 .wws-list li {
@@ -156,7 +155,7 @@
 /* Experience section */
 
 .experience-section {
-  padding: 2em;
+  padding: 3.5em 2em;
 }
 
 .experience {
@@ -190,8 +189,7 @@
 /* Why choose us section */
 
 .wcu-section {
-  padding-inline: 2em;
-  padding-block: 1em 3em;
+  padding: 3.5em 2em;
   background-color: var(--fourth-color);
   display: flex;
   flex-direction: column;
@@ -241,8 +239,7 @@
 /* Last section */
 
 .last-section {
-  padding-inline: 2em;
-  padding-block: 3.5em;
+  padding: 3.5em 2em;
   display: flex;
   flex-direction: column;
   gap: 2em;

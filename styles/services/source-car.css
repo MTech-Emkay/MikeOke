@@ -60,6 +60,7 @@
 
 .hero-links a {
   background-color: var(--second-color);
+  border-radius: 10px;
   padding: 1em 2em;
   transition: 0.2s;
   border: 2px solid var(--third-color);
@@ -82,7 +83,7 @@
 /* Source help section */
 
 .source-help-section {
-  padding: 2em;
+  padding: 3.5em 2em;
 }
 
 .source-help-section h2 {
@@ -108,7 +109,7 @@
 /* How it works section */
 
 .how-section {
-  padding: 2em;
+  padding: 3.5em 2em;
   background-color: var(--fourth-color);
 }
 
@@ -163,7 +164,7 @@
 /* Help us section */
 
 .help-us-section {
-  padding: 2em;
+  padding: 3.5em 2em;
   background-color: var(--fourth-color);
 }
 
@@ -193,7 +194,7 @@
 /* Why choose us section */
 
 .wcu-section {
-  padding: 2em;
+  padding: 3.5em 2em;
 }
 
 .wcu-section h2 {
@@ -233,7 +234,7 @@
 /* Frequently asked questions section */
 
 .faq-section {
-  padding: 2em;
+  padding: 3.5em 2em;
   display: flex;
   flex-direction: column;
   gap: 1em;
@@ -245,6 +246,7 @@
   padding: 1em;
   border-radius: 15px;
   width: 100%;
+  background-color: var(--fourth-color);
 }
 
 .faq-div h2 {
@@ -274,7 +276,7 @@
 /* Last section */
 
 .last-section {
-  padding: 2em;
+  padding: 3.5em 2em;
   text-align: center;
   display: flex;
   flex-direction: column;

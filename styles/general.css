@@ -192,6 +192,11 @@ p {
   transform: rotate(180deg);
 }
 
+.show-answer h3 {
+  border-bottom: 1px solid;
+  padding-block: 0.5em;
+}
+
 .show-answer p {
   display: block;
 }
@@ -228,6 +233,7 @@ header {
   display: flex;
   flex-direction: column;
   animation: show-nav 0.3s forwards;
+  overflow-y: auto;
 }
 
 @keyframes show-nav {

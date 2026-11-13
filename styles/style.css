@@ -63,6 +63,7 @@
 
 .hero-links a {
   background-color: var(--second-color);
+  border-radius: 10px;
   padding: 1em 2em;
   transition: 0.2s;
   border: 2px solid var(--third-color);
@@ -190,7 +191,7 @@
   padding-block: 3.5em;
   display: flex;
   flex-direction: column;
-  gap: 3em;
+  gap: 4em;
 }
 
 .wcu-section h2 {
@@ -342,7 +343,6 @@
 
 .rtb-links a {
   box-shadow: none;
-  border-radius: 10px;
   border-color: var(--second-color);
 }
 

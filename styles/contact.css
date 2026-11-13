@@ -61,7 +61,7 @@
 /* Contact information section */
 
 .information-section {
-  padding: 2em;
+  padding: 3.5em 2em;
   background-color: var(--fourth-color);
   display: grid;
   gap: 4em;
@@ -88,7 +88,6 @@
 }
 
 .contact-info li:hover {
-  /* transform: translateY(-5px); */
   transform: translateY(-7px);
   box-shadow: 5px 5px 10px var(--third-color);
 }
@@ -130,7 +129,7 @@
 /* How can we assist section */
 
 .assist-section {
-  padding: 2em;
+  padding: 3.5em 2em;
 }
 
 .assist-section h2 {
@@ -170,7 +169,7 @@
 /* Business hours section */
 
 .business-hours-section {
-  padding: 2em;
+  padding: 3.5em 2em;
 }
 
 .business-hours-section h2 {
@@ -197,8 +196,7 @@
 /* Locate us section */
 
 .location-section {
-  padding-block-start: 4em;
-  padding-inline: 2em;
+  padding: 3.5em 2em;
 }
 
 .location-section h2 {
@@ -212,8 +210,7 @@
 /* Last section */
 
 .last-section {
-  padding-inline: 2em;
-  padding-block: 3.5em;
+  padding: 3.5em 2em;
   display: flex;
   flex-direction: column;
   gap: 2em;
