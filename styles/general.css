@@ -285,10 +285,20 @@ header {
   font-size: 1.5rem;
 }
 
-.close {
+.show-nav .menu-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-header a {
+  width: 10%;
+}
+
+/* .close {
   display: flex;
   justify-content: end;
-}
+} */
 
 .close-nav {
   animation: close-nav 0.3s forwards;
