@@ -223,6 +223,10 @@
   gap: 0.5em;
 }
 
+.wcu {
+  gap: 3em;
+}
+
 .wcu h3 {
   padding-block-end: 0.5em;
 }
