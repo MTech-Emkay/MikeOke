@@ -16,6 +16,12 @@
   box-sizing: border-box;
 }
 
+a:active,
+h3:active,
+button:active {
+  background: none;
+}
+
 body {
   min-height: 100vh;
   font-family: "inter", sans-serif;
@@ -72,7 +78,7 @@ h2 {
 }
 
 h3 {
-  font-size: 1em;
+  font-size: 1.1em;
 }
 
 p {
@@ -328,6 +334,10 @@ header {
 }
 
 .show-nav .current-page {
+  color: var(--primary-color);
+}
+
+.show-nav .current-service {
   color: var(--primary-color);
 }
 

@@ -1,0 +1,245 @@
+/* Color variables */
+
+:root {
+  --primary-color: #172b4d;
+  --second-color: #24272b;
+  --third-color: #c0c5cc;
+  --fourth-color: #f3f5f7;
+}
+
+/* Hero section */
+
+.hero-section {
+  padding-inline: 2em;
+  /* padding-block-start: 3em; */
+  background-image: url(/images/car-buying.webp);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5em;
+  position: relative;
+  color: white;
+}
+
+.hero-section::before {
+  position: absolute;
+  content: "";
+  inset: 0;
+  background: linear-gradient(to right, #172b4dd3, #172b4d73);
+}
+
+.hero-text {
+  z-index: 5;
+  position: relative;
+  /* text-align: center; */
+}
+
+.hero-section h1 {
+  /* border-bottom: 1px solid; */
+  /* border-top: 1px solid; */
+  padding-block: 0.2em;
+}
+
+.hero-text p {
+  padding-block-start: 1em;
+}
+
+.hero-crumb {
+  z-index: 4;
+}
+
+.go-down {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  z-index: 4;
+}
+
+.go-down a {
+  background-color: var(--primary-color);
+  padding: 1em;
+  border-radius: 50%;
+  box-shadow: 2px 2px 25px var(--primary-color);
+  transition: transform 0.2s ease;
+  border: 2px solid var(--third-color);
+}
+
+.go-down a:hover {
+  transform: translate(-1px, -3px);
+}
+
+/* Car collection section */
+
+.car-collection-section {
+  padding-block: 3.5em;
+  /* position: sticky;
+  top: 100px; */
+  /* background-color: var(--fourth-color); */
+}
+
+.car-collection-section h2 {
+  padding-block-end: 0.5em;
+}
+
+.collection-text {
+  padding-inline: 2em;
+}
+
+/* Filter container */
+
+.filter-div {
+  padding-block: 2em 4em;
+  padding-inline: 2em;
+  display: flex;
+  gap: 0.5em;
+  position: sticky;
+  top: 55px;
+  z-index: 5;
+  background-color: white;
+}
+
+.filter-div button {
+  border: 1px solid var(--second-color);
+  padding: 0.2em 0.7em;
+  border-radius: 20px;
+}
+
+/* Search form */
+
+.car-search {
+  position: sticky;
+  padding-block-end: 2em;
+  padding-inline: 2em;
+  background-color: white;
+  top: 140px;
+  z-index: 5;
+}
+
+.car-search p {
+  padding-block-end: 1em;
+}
+
+.search-input {
+  padding: 0.8em;
+  border-radius: 50px;
+  border: 1px solid var(--second-color);
+  width: 100%;
+}
+
+.div-form {
+  position: relative;
+}
+
+.search-button-div {
+  position: absolute;
+  right: 0.2em;
+  top: 0;
+  bottom: 0;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-button {
+  background-color: var(--third-color);
+  padding: 0.4em;
+  border-radius: 50%;
+}
+
+/* Car listing cards */
+
+.car-cards {
+  padding-block: 7em 3.5em;
+  padding-inline: 2em;
+  display: grid;
+  gap: 3em;
+  background-color: var(--fourth-color);
+}
+
+.car-div {
+  box-shadow: 5px 5px 20px var(--third-color);
+  border-radius: 20px;
+  /* padding: 1em; */
+}
+
+.car-div img {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.car-cards:hover {
+  transform: scale(1.05);
+  transition: all ease-in-out 300ms;
+}
+
+.car-details {
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+.more-link {
+  padding-block: 1em;
+  padding-inline: 1.5em;
+  display: flex;
+  flex-direction: column;
+}
+
+.car-details span {
+  font-weight: 600;
+}
+
+/* Specific car section */
+
+.specific-car-section {
+  padding: 2em;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5em;
+  background-color: var(--fourth-color);
+}
+
+.specific-car-section h2 {
+  padding-block-end: 0.5em;
+}
+
+/* Import section */
+
+.import-section {
+  padding: 2em;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5em;
+  background: url("/images/import-section.webp");
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+.import-section::before {
+  position: absolute;
+  content: "";
+  inset: 0;
+  background: linear-gradient(to right, #172b4dd3, #172b4d73);
+}
+
+.import-section h2 {
+  padding-block-end: 0.5em;
+}
+
+.import-text,
+.second-link {
+  z-index: 3;
+}

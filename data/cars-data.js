@@ -1,4 +1,4 @@
-const cars = [
+export const cars = [
   {
     id: "mkm-2026-0001",
     name: "Honda Pilot",
@@ -31,7 +31,6 @@ const cars = [
     features: [],
     keywords: ["honda", "pilot", "2012", "nigeria used", "burgundy"],
   },
-
   {
     id: "mkm-2026-0002",
     name: "Toyota Highlander",
@@ -75,7 +74,6 @@ const cars = [
       "blue",
     ],
   },
-
   {
     id: "mkm-2026-0003",
     name: "Nissan Pathfinder",
@@ -110,7 +108,6 @@ const cars = [
     features: [],
     keywords: ["nissan", "pathfinder", "2011", "foreign used", "silver"],
   },
-
   {
     id: "mkm-2026-0004",
     name: "Toyota Sienna",
@@ -145,7 +142,6 @@ const cars = [
     features: ["Limited"],
     keywords: ["toyota", "sienna", "2005", "foreign used", "limited"],
   },
-
   {
     id: "mkm-2026-0005",
     name: "Scion XB",

@@ -80,6 +80,10 @@
     />
     <link rel="manifest" href="/site.webmanifest" />
 
+    <!-- Scroll Animation -->
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
     <!-- Stylesheet/Css -->
 
     <link rel="stylesheet" href="styles/general.css" />
@@ -120,11 +124,11 @@
 
         <ul class="nav-list">
           <li>
-            <a href="index.html" class="current-page">Home</a>
+            <a href="index.html">Home</a>
           </li>
 
           <li>
-            <a href="cars.html">Cars</a>
+            <a href="cars.html" class="current-page">Cars</a>
           </li>
 
           <li class="services">
@@ -148,7 +152,7 @@
 
                 <ul class="services-list">
                   <li>
-                    <a href="cars.html">Buy Car</a>
+                    <a class="current-service" href="cars.html">Buy Car</a>
                   </li>
 
                   <li>
@@ -196,6 +200,120 @@
         <i class="fa-solid fa-bars"></i>
       </button>
     </header>
+
+    <!-- Main contents -->
+
+    <main>
+      <!-- Hero section -->
+
+      <section class="hero-section">
+        <div class="hero-text">
+          <p class="eyebrow">OUR VEHICLE COLLECTION</p>
+
+          <h1 class="hero-header">Find Your Perfect Car.</h1>
+
+          <p>
+            Explore our collection of quality Nigeria-used and foreign-used
+            vehicles, carefully selected to give you value, comfort and
+            confidence.
+          </p>
+        </div>
+
+        <div class="hero-crumb">
+          <p>Home <i class="fa-solid fa-angles-right"></i> Cars</p>
+        </div>
+
+        <div class="go-down">
+          <a href="#car-collection"><i class="fa-solid fa-arrow-down"></i></a>
+        </div>
+      </section>
+
+      <!-- Car collection section -->
+
+      <section id="car-collection" class="car-collection-section">
+        <div data-aos="fade-up" class="collection-text">
+          <h2>Explore Our Collections</h2>
+
+          <p>
+            Browse our selection of quality vehicles and find one that matches
+            your preference and budget.
+          </p>
+        </div>
+
+        <!-- Filter container -->
+
+        <div class="filter-div">
+          <button class="all-cars-btn">All</button>
+
+          <button class="nigerian-cars-btn">Nigerian Used</button>
+
+          <button class="foreign-cars-btn">Foreign Used</button>
+        </div>
+
+        <!-- Search car form -->
+
+        <div class="car-search">
+          <p>5 vehicles found</p>
+
+          <div class="div-form">
+            <form class="search-form" role="search" action="">
+              <label for="search-item" role="search" hidden
+                >Search your preference</label
+              >
+              <input
+                type="text"
+                name="search"
+                id="search-item"
+                placeholder="Search your preference"
+                class="search-input"
+              />
+
+              <div class="search-button-div">
+                <button
+                  class="search-button"
+                  type="submit"
+                  aria-label="Search car"
+                >
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <!-- Cars listing cards -->
+
+        <div class="car-cards"></div>
+      </section>
+
+      <section data-aos="fade-up" class="specific-car-section">
+        <div class="specific-text">
+          <h2>Looking For A Specific Car?</h2>
+
+          <p>
+            Can't find the vehicle you're looking for? Tell us what you need,
+            and our team will help you source the right car based on your
+            preferences and budget.
+          </p>
+        </div>
+
+        <a class="second-link" href="contact.html">Explore Car Sourcing</a>
+      </section>
+
+      <section data-aos="fade-up" class="import-section">
+        <div class="import-text">
+          <h2>Want To Import Car?</h2>
+
+          <p>
+            Get your preferred vehicle from abroad with ease. From vehicle
+            sourcing and budget planning to shipping, documentation and
+            clearing, we're here to make the process seamless.
+          </p>
+        </div>
+
+        <a class="second-link" href="contact.html">Explore Importation</a>
+      </section>
+    </main>
 
     <!-- Footer -->
 
@@ -301,6 +419,8 @@
   </body>
 
   <script src="script/main.js"></script>
+
+  <script type="module" src="script/cars.js"></script>
 
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 

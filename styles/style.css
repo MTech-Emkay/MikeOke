@@ -105,7 +105,6 @@
 
 .car-cards {
   display: grid;
-  grid-template-columns: 1fr;
   gap: 2em;
   padding-block: 2em;
 }
@@ -119,6 +118,11 @@
 .car-div img {
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
+}
+
+.car-cards:hover {
+  transform: scale(1.05);
+  transition: all ease-in-out 300ms;
 }
 
 .car-details {
