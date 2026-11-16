@@ -258,7 +258,7 @@ header {
 }
 
 .show-nav ul {
-  padding-block: 2em;
+  padding-block: 3em 2em;
   display: flex;
   flex-direction: column;
   gap: 1em;
@@ -599,7 +599,7 @@ footer ul {
     margin: auto;
   }
 
-  .close {
+  .menu-header {
     display: none;
   }
 
