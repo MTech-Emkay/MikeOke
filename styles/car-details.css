@@ -28,6 +28,16 @@
   z-index: 20;
 } */
 
+/* Vehicle error */
+
+.vehicle-error {
+  padding: 5em;
+}
+
+.vehicle-error p {
+  padding-block: 1em 2em;
+}
+
 /* Sections container */
 
 .sections-container {
@@ -66,7 +76,7 @@
 }
 
 .main-image-gallery img {
-  display: block;
+  /* display: block; */
 
   flex: 0 0 100%;
   width: 100%;
@@ -105,20 +115,26 @@
   font-family: "Font Awesome 6 Free";
   font-weight: 900;
   position-area: right center;
-  /* translate: 50%; */
+  /* translate: -50%; */
 }
 
 .image-thumbnail {
   display: flex;
   gap: 1em;
+  overflow-x: auto;
 }
 
 .image-thumbnail img {
   cursor: pointer;
   transition: 0.2s;
+  width: 25%;
 }
 
 .image-thumbnail img:hover {
+  border: var(--primary-color) 3px solid;
+}
+
+.border {
   border: var(--primary-color) 3px solid;
 }
 
@@ -194,7 +210,8 @@
 /* Interested section */
 
 .interested-section {
-  padding: 2em;
+  background-color: var(--fourth-color);
+  padding: 3em 2em;
 }
 
 .interested-section p {
@@ -209,8 +226,7 @@
 }
 
 .upper-contact {
-  display: flex;
-  flex-direction: column;
+  display: grid;
   text-align: center;
   gap: 1em;
 }
@@ -242,6 +258,7 @@
 
 .similar-section {
   padding: 2em;
+  background-color: var(--fourth-color);
 }
 
 .similar-section h2 {
@@ -287,4 +304,93 @@
 
 .car-details span {
   font-weight: 600;
+}
+
+/* Media queries */
+
+/* Tablet screens */
+
+@media (min-width: 768px) {
+  .sections-container {
+    padding-inline: 4em;
+  }
+
+  .main-image-gallery::scroll-button(left) {
+    translate: 50%;
+  }
+
+  .main-image-gallery::scroll-button(right) {
+    translate: -50%;
+  }
+
+  /* Interested section */
+
+  .interested-section {
+    padding-inline: 4em;
+  }
+
+  .upper-contact {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Similar(You may also like) section */
+
+  .similar-section {
+    padding-inline: 4em;
+  }
+
+  .car-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Desktop screens */
+
+@media (min-width: 1200px) {
+  .sections-container {
+    padding-inline: 6em;
+    grid-template-columns: 2fr 1fr;
+    gap: 2.5em;
+  }
+
+  .main-image-gallery::scroll-button(left) {
+    translate: 50%;
+  }
+
+  .main-image-gallery::scroll-button(right) {
+    translate: -50%;
+  }
+
+  /* Vehicle details section */
+
+  .vehicle-details-section {
+    overflow-y: scroll;
+  }
+
+  /* Interested section */
+
+  .interested-section {
+    padding-inline: 6em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .interested-text {
+    width: 60%;
+  }
+
+  .upper-contact {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Similar(You may also like) section */
+
+  .similar-section {
+    padding-inline: 6em;
+  }
+
+  .car-cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }

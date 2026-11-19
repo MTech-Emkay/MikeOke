@@ -8,10 +8,10 @@ export const cars = [
     condition: "Nigeria-used",
     location: "Ibadan, Oyo State",
     image: {
-      image1: "images/cars/honda-pilot/IMG-20261012-WA0017.webp",
+      image1: "images/cars/honda-pilot/IMG-20261012-WA0020.webp",
       image2: "images/cars/honda-pilot/IMG-20261012-WA0018.webp",
       image3: "images/cars/honda-pilot/IMG-20261012-WA0019.webp",
-      image4: "images/cars/honda-pilot/IMG-20261012-WA0020.webp",
+      image4: "images/cars/honda-pilot/IMG-20261012-WA0017.webp",
       image5: "images/cars/honda-pilot/IMG-20261012-WA0021.webp",
       image6: "images/cars/honda-pilot/IMG-20261012-WA0022.webp",
     },
@@ -40,7 +40,7 @@ export const cars = [
     condition: "Foreign-used",
     location: "Ibadan, Oyo State",
     image: {
-      image1: "images/cars/toyota-highlander/IMG-20261014-WA0000.webp",
+      image1: "images/cars/toyota-highlander/IMG-20261014-WA0008.webp",
       image2: "images/cars/toyota-highlander/IMG-20261014-WA0001.webp",
       image3: "images/cars/toyota-highlander/IMG-20261014-WA0002.webp",
       image4: "images/cars/toyota-highlander/IMG-20261014-WA0003.webp",
@@ -48,7 +48,7 @@ export const cars = [
       image6: "images/cars/toyota-highlander/IMG-20261014-WA0005.webp",
       image7: "images/cars/toyota-highlander/IMG-20261014-WA0006.webp",
       image8: "images/cars/toyota-highlander/IMG-20261014-WA0007.webp",
-      image9: "images/cars/toyota-highlander/IMG-20261014-WA0008.webp",
+      image9: "images/cars/toyota-highlander/IMG-20261014-WA0000.webp",
       image10: "images/cars/toyota-highlander/IMG-20261014-WA0009.webp",
     },
     specifications: {
@@ -117,9 +117,9 @@ export const cars = [
     condition: "Foreign-used",
     location: "Ibadan, Oyo State",
     image: {
-      image1: "images/cars/toyota-sienna/IMG-20261014-WA0018.webp",
+      image1: "images/cars/toyota-sienna/IMG-20261014-WA0020.webp",
       image2: "images/cars/toyota-sienna/IMG-20261014-WA0019.webp",
-      image3: "images/cars/toyota-sienna/IMG-20261014-WA0020.webp",
+      image3: "images/cars/toyota-sienna/IMG-20261014-WA0018.webp",
       image4: "images/cars/toyota-sienna/IMG-20261014-WA0021.webp",
       image5: "images/cars/toyota-sienna/IMG-20261014-WA0022.webp",
       image6: "images/cars/toyota-sienna/IMG-20261014-WA0023.webp",
@@ -151,12 +151,12 @@ export const cars = [
     condition: "Foreign-used",
     location: "Ibadan, Oyo State",
     image: {
-      image1: "images/cars/scion-xb/IMG-20261014-WA0026.webp",
+      image1: "images/cars/scion-xb/IMG-20261014-WA0031.webp",
       image2: "images/cars/scion-xb/IMG-20261014-WA0027.webp",
       image3: "images/cars/scion-xb/IMG-20261014-WA0028.webp",
       image4: "images/cars/scion-xb/IMG-20261014-WA0029.webp",
       image5: "images/cars/scion-xb/IMG-20261014-WA0030.webp",
-      image6: "images/cars/scion-xb/IMG-20261014-WA0031.webp",
+      image6: "images/cars/scion-xb/IMG-20261014-WA0026.webp",
     },
     specifications: {
       transmission: "Automatic",

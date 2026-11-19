@@ -93,9 +93,9 @@
   <body>
     <!-- Back to top button/link -->
 
-    <a data-aos="fade-up" class="back-to-top" href="#" hidden
-      ><i class="fa-solid fa-arrow-up"></i
-    ></a>
+    <button data-aos="fade-up" class="back-to-top" hidden>
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
 
     <!-- Header -->
 
@@ -218,66 +218,27 @@
 
       <!-- Hero section -->
 
+      <div class="vehicle-error" hidden>
+        <h2>Vehicle Not Found</h2>
+        <p>
+          Sorry, the vehicle you're looking for is unavailable or does not
+          exist.
+        </p>
+        <a href="cars.html" class="second-link">Browse Available Cars</a>
+      </div>
+
       <section class="sections-container">
         <section class="image-gallery-section">
-          <div class="main-image-gallery">
-            <img
-              src="images/cars/honda-pilot/IMG-20261012-WA0017.webp"
-              alt="honda pilot"
-            />
+          <div class="main-image-gallery"></div>
 
-            <img
-              src="images/cars/honda-pilot/IMG-20261012-WA0018.webp"
-              alt="honda pilot"
-            />
-
-            <img
-              src="images/cars/honda-pilot/IMG-20261012-WA0019.webp"
-              alt="honda pilot"
-            />
-          </div>
-
-          <div class="image-thumbnail">
-            <div>
-              <img
-                src="images/cars/honda-pilot/IMG-20261012-WA0018.webp"
-                alt="image 1"
-              />
-            </div>
-
-            <div>
-              <img
-                src="images/cars/honda-pilot/IMG-20261012-WA0019.webp"
-                alt="image 1"
-              />
-            </div>
-
-            <div>
-              <img
-                src="images/cars/honda-pilot/IMG-20261012-WA0020.webp"
-                alt="image 1"
-              />
-            </div>
-          </div>
+          <div class="image-thumbnail"></div>
         </section>
 
         <section class="vehicle-details-section">
           <section class="vehicle-overview-section">
             <h2>Vehicle Overview</h2>
 
-            <div class="overview">
-              <h3 class="vehicle-name">Honda Pilot</h3>
-
-              <h3 class="price">NGN 8,500,000</h3>
-
-              <p><span>Condition :</span> Nigerian Used</p>
-
-              <p><span>Year :</span> 2012</p>
-
-              <p><span>Mileage :</span> 177,471 km</p>
-
-              <p><span>Location :</span> Ibadan, Oyo State</p>
-            </div>
+            <div class="overview"></div>
           </section>
 
           <section class="vehicle-information-section">
@@ -288,29 +249,7 @@
               features and other important details.
             </p>
 
-            <div class="information">
-              <p><span>Color :</span> Black</p>
-
-              <p><span>Transmission :</span> Automatic</p>
-
-              <p><span>Fuel type :</span> Petrol</p>
-
-              <p><span>Engine capacity :</span> 2.5l</p>
-
-              <p><span>Airbags :</span> Intact</p>
-
-              <p><span>Spare tyre :</span> Available</p>
-
-              <p><span>Interior :</span> Leather</p>
-
-              <p><span>Exterior :</span> Good Condition</p>
-
-              <p><span>Vehicle damage :</span> Nil</p>
-
-              <p><span>Special features :</span> limited</p>
-
-              <p><span>Starting system :</span> Key start</p>
-            </div>
+            <div class="information"></div>
           </section>
 
           <section class="inspection-section">
@@ -369,12 +308,14 @@
       </section>
 
       <section class="interested-section">
-        <h2>Interested in this vehicle?</h2>
+        <div class="interested-text">
+          <h2>Interested in this vehicle?</h2>
 
-        <p>
-          Found the car you want? Get in touch with our team today for more
-          information, pricing enquiries and assistance with your purchase.
-        </p>
+          <p>
+            Found the car you want? Get in touch with our team today for more
+            information, pricing enquiries and assistance with your purchase.
+          </p>
+        </div>
 
         <div class="contact-div">
           <div class="upper-contact">
@@ -408,31 +349,7 @@
           Explore other vehicles from our collection that might interest you
         </p>
 
-        <div class="car-cards">
-          <div data-aos="fade-up" class="car-div">
-            <a href="car-details.html">
-              <img
-                src="images/cars/honda-pilot/IMG-20261012-WA0020.webp"
-                alt="Honda Pilot"
-                loading="lazy"
-              />
-            </a>
-
-            <div class="car-details">
-              <h3>Honda Pilot</h3>
-
-              <p><span>Price:</span> NGN 8,500,000</p>
-
-              <p><span>Condition :</span> Nigerian Used</p>
-
-              <p><span>Year :</span> 2012</p>
-            </div>
-
-            <div class="more-link">
-              <a class="primary-link" href="car-details.html">See more</a>
-            </div>
-          </div>
-        </div>
+        <div class="car-cards"></div>
       </section>
     </main>
 
@@ -540,6 +457,8 @@
   </body>
 
   <script src="script/main.js"></script>
+
+  <script type="module" src="script/car-details.js"></script>
 
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 

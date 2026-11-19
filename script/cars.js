@@ -1,14 +1,14 @@
-import { cars, products } from "../data/cars-data.js";
+import { cars } from "../data/cars-data.js";
 
 let carsHtml = "";
 
 cars.forEach((car) => {
   carsHtml += `
     <div data-aos="fade-up" class="car-div">
-        <a href="car-details.html">
+        <a href="car-details.html?id=${car.id}">
             <img
-            src=${car.image.image4}
-            alt="Honda Pilot"
+            src=${car.image.image1}
+            alt=${car.name}
             loading="lazy"
             />
         </a>
@@ -24,7 +24,7 @@ cars.forEach((car) => {
         </div>
 
         <div class="more-link">
-            <a class="primary-link" href="car-details.html">See more</a>
+            <a class="primary-link" href="car-details.html?id=${car.id}">See more</a>
         </div>
     </div>
     `;

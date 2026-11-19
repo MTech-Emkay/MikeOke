@@ -133,6 +133,12 @@ p {
   display: block;
 }
 
+@media (prefers-reduced-motion: reduce) {
+  .back-to-top {
+    transition: none;
+  }
+}
+
 /* Contact dropdown */
 
 .contact-options {

@@ -10,6 +10,15 @@ window.addEventListener("scroll", () => {
   }
 });
 
+const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+
+backToTop.addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    behavior: reducedMotion.matches ? "instant" : "smooth",
+  });
+});
+
 // Open hamburger menu
 
 const showNav = document.querySelector(".primary-nav");

@@ -98,14 +98,14 @@
   display: flex;
   gap: 0.5em;
   position: sticky;
-  top: 55px;
+  top: 50px;
   z-index: 5;
   background-color: white;
 }
 
 .filter-div button {
   border: 1px solid var(--second-color);
-  padding: 0.2em 0.7em;
+  padding: 0.3em 0.6em;
   border-radius: 20px;
 }
 
@@ -242,4 +242,119 @@
 .import-text,
 .second-link {
   z-index: 3;
+}
+
+/* Media queries */
+
+/* Tablet screens */
+
+@media (min-width: 768px) {
+  /* Hero section */
+
+  .hero-section {
+    padding-inline: 4em;
+    align-items: initial;
+  }
+
+  /* Car collection section */
+
+  .collection-text {
+    padding-inline: 4em;
+  }
+
+  /* Filter container */
+
+  .filter-div {
+    padding-inline: 4em;
+  }
+
+  /* Search form */
+
+  .car-search {
+    padding-inline: 4em;
+  }
+
+  /* Car listing cards */
+
+  .car-cards {
+    padding-inline: 4em;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Specific car section */
+
+  .specific-car-section {
+    padding-inline: 4em;
+  }
+
+  /* Import section */
+
+  .import-section {
+    padding-inline: 4em;
+  }
+}
+
+/* Desktop screens */
+
+@media (min-width: 1200px) {
+  /* Hero section */
+
+  .hero-section {
+    padding-inline: 6em;
+  }
+
+  .hero-text {
+    width: 60%;
+  }
+
+  /* Car collection section */
+
+  .collection-text {
+    padding-inline: 6em;
+  }
+
+  /* Filter container */
+
+  .filter-div {
+    padding-inline: 6em;
+  }
+
+  /* Search form */
+
+  .car-search {
+    padding-inline: 6em;
+  }
+
+  /* Car listing cards */
+
+  .car-cards {
+    padding-inline: 6em;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* Specific car section */
+
+  .specific-car-section {
+    padding-inline: 6em;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: start;
+  }
+
+  .specific-text {
+    width: 70%;
+  }
+
+  /* Import section */
+
+  .import-section {
+    padding-inline: 6em;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: start;
+  }
+
+  .import-text {
+    width: 70%;
+  }
 }
